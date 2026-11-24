@@ -48,6 +48,9 @@
   a.tel { color:var(--accent); font-weight:700; text-decoration:none; }
   a.sms { display:inline-block; margin-top:6px; padding:4px 12px; border-radius:8px; background:var(--soft); color:var(--accent); font-size:14px; font-weight:600; text-decoration:none; }
   .sub { color:var(--sub); font-size:13.5px; }
+  tr.addr td { border-top:0; padding-top:0; text-align:left; white-space:normal; }
+  .maps { display:grid; grid-template-columns:repeat(4, 1fr); gap:6px; margin-top:8px; }
+  .maps a, .maps button { text-align:center; padding:8px 2px; border:0; border-radius:8px; background:var(--soft); color:var(--accent); font:600 13.5px/1.4 var(--font); text-decoration:none; cursor:pointer; }
   footer { color:var(--sub); font-size:13px; text-align:center; padding-bottom:28px; }
 </style>
 </head>
@@ -95,6 +98,13 @@
   <h2>주요 연락처</h2>
   <table>
     <tr><td>조합사무실<br><span class="sub">문자 가능</span></td><td><a class="tel" href="tel:0313351254">031-335-1254</a><br><a class="sms" href="sms:0313351254">문자 보내기</a></td></tr>
+    <tr class="addr"><td colspan="2"><span class="sub">경기도 용인시 처인구 성산로170번길 17-5 1층 역북지역주택조합</span>
+      <div class="maps">
+        <a href="https://naver.me/FqZ3jRP7">네이버지도</a>
+        <a href="https://kko.to/UAwqM5DAFD">카카오맵</a>
+        <a href="https://tmap.life/8d7738ef">티맵</a>
+        <button type="button" id="copyAddr">주소 복사</button>
+      </div></td></tr>
     <tr><td>관리사무소<br><span class="sub">입주예약 · 관리비예치금</span></td><td><a class="tel" href="tel:03133441588">031-3344-1588</a></td></tr>
     <tr><td>입주지원센터<br><span class="sub">입주증 발급</span></td><td><a class="tel" href="tel:07049117139">070-4911-7139</a></td></tr>
     <tr><td>입주지원센터<br><span class="sub">열쇠불출</span></td><td><a class="tel" href="tel:07042766127">070-4276-6127</a></td></tr>
@@ -103,5 +113,13 @@
 </main>
 
 <footer class="wrap">자세한 내용은 각 안내 페이지와 원본 입주안내문을 확인해 주세요.</footer>
+<script>
+  document.getElementById('copyAddr').addEventListener('click', function () {
+    var b = this, t = '경기도 용인시 처인구 성산로170번길 17-5';
+    function done() { b.textContent = '복사됨'; setTimeout(function () { b.textContent = '주소 복사'; }, 1500); }
+    try { navigator.clipboard.writeText(t).then(done, function () { window.prompt('길게 눌러 복사하세요', t); }); }
+    catch (e) { window.prompt('길게 눌러 복사하세요', t); }
+  });
+</script>
 </body>
 </html>
