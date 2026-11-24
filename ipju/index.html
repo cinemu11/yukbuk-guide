@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>역북 서희스타힐스 프라임시티 입주안내문</title>
-<meta name="description" content="입주일정 · 전화번호 · 입주절차 · 납부계좌 · 입주증 · 열쇠 · A/S · FAQ">
+<meta name="description" content="입주일정 · 입주관련 전화번호 · 입주절차 · 각종 대금 납부안내 · FAQ">
 <meta property="og:title" content="역북 서희스타힐스 프라임시티 입주안내문">
-<meta property="og:description" content="입주 시작 2026. 11. 28.(토) · 입주일정 · 납부계좌 · 입주절차 · FAQ">
+<meta property="og:description" content="입주일정 · 입주관련 전화번호 · 입주절차 · 각종 대금 납부안내 · FAQ">
 <meta property="og:type" content="website">
 <meta name="robots" content="noindex">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap">
@@ -22,9 +22,7 @@
   .wrap { max-width:760px; margin:0 auto; padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); }
   header { background:var(--accent); color:#fff; padding-block:28px 22px; }
   @media (prefers-color-scheme: dark) { header { background:#2c3470; } }
-  header .eyebrow { font-size:14px; opacity:.85; }
-  header h1 { font-size:24px; line-height:1.35; margin:4px 0 10px; }
-  header .start { display:inline-block; background:rgba(255,255,255,.16); border-radius:8px; padding:6px 10px; font-weight:600; }
+  header h1 { font-size:24px; line-height:1.35; margin:0 0 10px; }
   .hbtns { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
   .hbtns a { flex:1 1 150px; text-align:center; padding:11px 10px; border-radius:10px; background:#fff; color:#2c3470; font-weight:700; text-decoration:none; }
   .hbtns a.ghost { background:transparent; color:#fff; border:1px solid rgba(255,255,255,.6); }
@@ -32,35 +30,36 @@
   nav .wrap { display:flex; gap:6px; overflow-x:auto; padding-block:10px; scrollbar-width:none; }
   nav a { flex:none; padding:6px 12px; border-radius:999px; background:var(--soft); color:var(--accent); font-size:14px; font-weight:600; text-decoration:none; }
   main { padding-block:16px 48px; display:grid; gap:14px; }
+  .part { font-size:15px; font-weight:700; color:var(--sub); margin:10px 2px -4px; }
   section { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 16px; min-width:0; }
   h2 { font-size:20px; margin:0 0 10px; color:var(--accent); }
   h3 { font-size:17px; margin:18px 0 8px; }
   h2 + h3 { margin-top:4px; }
-  p, ul, ol { margin:6px 0; }
-  ul, ol { padding-left:20px; }
-  li { margin:3px 0; }
+  p { margin:6px 0; }
+  ul.m { list-style:none; padding:0; margin:6px 0; }
+  ul.m li { margin:4px 0; padding-left:1.3em; text-indent:-1.3em; }
   .sub { color:var(--sub); font-size:14px; }
   .warn { color:var(--warn); font-weight:600; }
   .tbl { overflow-x:auto; margin:8px 0; }
-  table { border-collapse:collapse; width:100%; font-size:14.5px; min-width:100%; }
+  table { border-collapse:collapse; width:100%; font-size:14.5px; }
   th, td { overflow-wrap:anywhere; border:1px solid var(--line); padding:7px 8px; text-align:left; vertical-align:top; }
   th { background:var(--soft); font-weight:600; }
   td.n { font-variant-numeric:tabular-nums; }
   .note { background:var(--soft); border-radius:10px; padding:12px 14px; margin:10px 0; }
-  .note ul { padding-left:18px; }
-  .tag { display:inline-block; font-size:13px; font-weight:700; color:var(--accent); background:var(--soft); border-radius:6px; padding:1px 8px; margin-right:4px; }
+  .lbl { font-weight:700; }
   a.tel { color:var(--accent); font-weight:600; text-decoration:none; white-space:nowrap; }
   .acct { font-weight:700; font-variant-numeric:tabular-nums; white-space:nowrap; }
   .copy { margin-left:6px; border:0; border-radius:6px; padding:2px 8px; background:var(--accent); color:var(--card); font:600 12px/1.6 var(--font); cursor:pointer; }
-  .steps { list-style:none; padding:0; display:grid; gap:10px; }
-  .steps li { border:1px solid var(--line); border-radius:12px; padding:12px 14px; }
-  .steps b.no { display:inline-grid; place-items:center; width:24px; height:24px; border-radius:50%; background:var(--accent); color:var(--card); font-size:13px; margin-right:6px; }
+  .steps { display:grid; gap:10px; margin:10px 0; }
+  .step { border:1px solid var(--line); border-radius:12px; padding:12px 14px; }
+  .step h4 { margin:0 0 4px; font-size:16px; }
+  .step .k { font-size:13px; font-weight:700; color:var(--accent); margin-top:6px; }
   .big { display:block; text-align:center; padding:13px; border-radius:10px; background:var(--accent); color:var(--card); font-weight:700; text-decoration:none; margin:10px 0; }
   figure { margin:10px 0; }
   figure img { width:100%; height:auto; border:1px solid var(--line); border-radius:10px; background:#fff; }
   figcaption { font-size:13px; color:var(--sub); margin-top:4px; }
   .faq dt { font-weight:700; margin-top:14px; }
-  .faq dd { margin:4px 0 0; padding-left:0; }
+  .faq dd { margin:4px 0 0; }
   footer { color:var(--sub); font-size:13.5px; text-align:center; padding-bottom:32px; }
   a:focus-visible, button:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
 </style>
@@ -69,9 +68,7 @@
 
 <header>
   <div class="wrap">
-    <div class="eyebrow">역북지역주택조합 · ㈜서희건설</div>
     <h1>역북 서희스타힐스 프라임시티<br>입주안내문</h1>
-    <span class="start">입주 시작 2026. 11. 28.(토)</span>
     <div class="hbtns">
       <a href="https://m2.dtspace.co.kr/st0010">입주예약 · 하자접수 바로가기</a>
       <a class="ghost" href="guide.pdf" download="역북 서희스타힐스 프라임시티 입주안내문.pdf">원본 PDF 받기</a>
@@ -81,261 +78,289 @@
 
 <nav aria-label="목차">
   <div class="wrap">
-    <a href="#schedule">입주일정</a><a href="#phone">전화번호</a><a href="#process">입주절차</a><a href="#reserve">입주예약</a>
-    <a href="#pay">대금납부</a><a href="#loan">중도금대출</a><a href="#card">입주증</a><a href="#deposit">관리비예치금</a>
-    <a href="#key">열쇠수령</a><a href="#as">A/S</a><a href="#caution">유의사항</a><a href="#tax">취득세</a>
-    <a href="#regist">소유권이전</a><a href="#life">생활편의</a><a href="#faq">FAQ</a>
+    <a href="#schedule">입주일정</a><a href="#phone">전화번호</a><a href="#process">입주절차</a><a href="#reserve">입주예정일 예약</a>
+    <a href="#pay">대금 납부</a><a href="#loan">중도금 대출</a><a href="#card">입주증</a><a href="#deposit">관리비예치금</a>
+    <a href="#key">열쇠 수령</a><a href="#as">A/S</a><a href="#caution">유의사항</a><a href="#tax">취득세</a>
+    <a href="#regist">소유권이전등기</a><a href="#life">생활편의시설</a><a href="#faq">FAQ</a>
   </div>
 </nav>
 
 <main class="wrap">
 
+  <!-- p3 인사말 -->
   <section>
-    <h2>입주를 진심으로 축하드립니다</h2>
+    <h2>역북서희스타힐스 프라임시티<br>입주를 진심으로 축하드립니다.</h2>
     <p>귀댁에 건강과 행복이 충만하시길 진심으로 기원합니다.</p>
-    <p>저희 역북지역주택조합(역북서희스타힐스 프라임시티)은 그동안 여러분의 협조와 성원으로 차질없이 공사가 진행되어 입주가 <b>2026. 11. 28.(토)</b>부터 시작됩니다.
-    새로운 생활의 시작을 앞두고 계신 고객님의 편의와 원활한 입주를 돕기 위한 제반사항을 안내드리오니 본 안내문을 잘 확인하시어 입주 준비에 차질 없으시기 바랍니다.</p>
+    <p>저희 역북지역주택조합 (역북서희스타힐스 프라임시티)은 그동안 여러분의 협조와 성원으로 차질없이 공사가 진행되어 입주가 <b>2026. 11. 28.(토)</b>부터 시작됩니다.</p>
+    <p>새로운 생활의 시작을 앞두고 계신 고객님의 편의와 원활한 입주를 돕기 위한 제반사항을 안내드리오니 본 안내문을 잘 확인하시어 입주 준비에 차질 없으시기 바랍니다.</p>
     <p>역북지역주택조합과 (주)서희건설은 앞으로도 고객님의 만족스러운 생활을 위하여 최선의 노력을 다하겠습니다.</p>
-    <p class="sub">역북지역주택조합 / ㈜서희건설 일동 올림 · 도로명 주소: 경기 용인시 처인구 성산로 180</p>
+    <p class="sub">역북지역주택조합 / ㈜서희건설 일동 올림</p>
+    <p class="sub">※ 도로명 주소 : 경기 용인시 처인구 성산로 180</p>
   </section>
 
-  <!-- 1. 입주안내 -->
+  <div class="part">1. 입주안내</div>
+
+  <!-- p4 -->
   <section id="schedule">
     <h2>① 입주일정</h2>
-    <h3>조합원 입주일정</h3>
+    <h3>조합원 입주일정 안내</h3>
     <div class="tbl"><table>
-      <tr><th>구분</th><th>일정</th><th>비고</th></tr>
+      <tr><th>구분</th><th>일정</th><th>비 고</th></tr>
       <tr><td>입주지정기간</td><td class="n">2026. 11. 28.(토) ~<br>2027. 01. 26.(화) [60일간]</td><td rowspan="2">입주증 발급 및 키 불출<br>같은 날 희망 시 오후 3시까지 방문 必</td></tr>
       <tr><td>입주증 발급기간</td><td class="n">2026. 11. 28.(토) ~</td></tr>
     </table></div>
-    <h3>일반분양자 입주일정</h3>
+    <h3>일반분양자 입주일정 안내</h3>
     <div class="tbl"><table>
-      <tr><th>구분</th><th>일정</th><th>비고</th></tr>
-      <tr><td>입주지정기간(1차)<br><span class="sub">(조기입주 희망시)</span></td><td class="n">2026. 11. 28.(토) ~<br>2027. 01. 26.(화) [60일간]</td><td rowspan="2">입주증 발급 및 키 불출<br>같은 날 희망 시 오후 3시까지 방문 必</td></tr>
-      <tr><td>입주증 발급기간</td><td class="n">2026. 11. 28.(토) ~</td></tr>
-      <tr><td>입주지정기간(2차)<br><span class="sub">(모집공고 기준)</span></td><td class="n">2027. 03. 02.(화) ~<br>2027. 04. 30.(금) [60일간]</td><td rowspan="2">입주증 발급 및 키 불출<br>같은 날 희망 시 오후 3시까지 방문 必</td></tr>
+      <tr><th>구분</th><th>일정</th><th>비 고</th></tr>
+      <tr><td>입주지정기간(1차)<br>(조기입주 희망시)</td><td class="n">2026. 11. 28.(토) ~<br>2027. 01. 26.(화) [60일간]</td><td rowspan="2">입주증 발급 및 키 불출<br>같은 날 희망 시 오후 3시까지 방문 必</td></tr>
+      <tr><td>입주증 발급기간</td><td class="n">2026.11.28.(토) ~</td></tr>
+      <tr><td>입주지정기간(2차)<br>(모집공고 기준)</td><td class="n">2027. 03. 02.(화) ~<br>2027. 04. 30.(금) [60일간]</td><td rowspan="2">입주증 발급 및 키 불출<br>같은 날 희망 시 오후 3시까지 방문 必</td></tr>
       <tr><td>입주증 발급기간</td><td class="n">2027. 03. 02.(화) ~</td></tr>
     </table></div>
     <div class="note">
-      <p><b>입주예약신청 : 2026. 11. 09.(월)부터 모바일로만 신청가능 (방문신청불가)</b> ☞ <a href="#reserve">모바일 입주예약 방법</a> 참조</p>
-      <ul>
-        <li>휴일 중 입주를 희망하시는 세대는 반드시 평일에 입주증 수령 및 열쇠 인수 등의 입주절차를 완료하시기 바랍니다.</li>
-        <li>잔금을 완납하여도 입주지정기간 이전에는 입주하실 수 없으니 이점 양지하시기 바랍니다.</li>
-        <li>입주증 발급, 열쇠 수령 및 시설물 인수인계 후 개별적 인테리어 공사 가능합니다.</li>
+      <p><b>입주예약신청 : 2026. 11. 09.(월) 부터 모바일로만 신청가능 (방문신청불가)</b></p>
+      <p>☞ <a href="#reserve-mobile">(p8) 입주예약 신청안내문</a>을 참조바랍니다.</p>
+      <ul class="m">
+        <li>* 휴일 중 입주를 희망하시는 세대는 반드시 평일에 입주증 수령 및 열쇠 인수 등의 입주절차를 완료하시기 바랍니다.</li>
+        <li>* 잔금을 완납하여도 입주지정기간 이전에는 입주하실 수 없으니 이점 양지하시기 바랍니다.</li>
+        <li>* 입주증 발급, 열쇠 수령 및 시설물 인수인계 후 개별적 인테리어 공사 가능합니다.</li>
       </ul>
     </div>
   </section>
 
+  <!-- p5 -->
   <section id="phone">
     <h2>② 입주관련 전화번호</h2>
-    <h3>조합원 및 조기입주자(일반분양)</h3>
-    <p class="sub">2026. 11. 28.(토) ~ 2027. 01. 26.(화) [60일간]</p>
+    <h3>▶ 조합원 및 조기입주자(일반분양) - 2026. 11. 28.(토) ~ 2027. 01. 26.(화) [60일간]</h3>
     <div class="tbl"><table>
-      <tr><th>구분 · 문의처</th><th>전화번호 · 비고</th></tr>
-      <tr><td>입주예정일 예약접수<br><span class="sub">관리사무소</span></td><td><a class="tel" href="tel:03133441588">031-3344-1588</a><br><span class="sub">Fax 031-3344-1599</span><br><span class="sub">2026. 11. 09.(월)부터 문의가능<br>09:00~17:00 (점심 12:00~13:00)<br>※ 모바일 예약만 가능</span></td></tr>
-      <tr><td>입주증 발급 및 입주절차 안내<br><span class="sub">입주지원센터</span></td><td><a class="tel" href="tel:07049117139">070-4911-7139</a><br><span class="sub">2026. 11. 28.(토)부터 문의가능<br>10:00~16:00 (점심 12:00~13:00)<br>※ 토.일요일, 공휴일 발급불가</span></td></tr>
-      <tr><td>열쇠불출 안내<br><span class="sub">입주지원센터</span></td><td><a class="tel" href="tel:07042766127">070-4276-6127</a><br><span class="sub">2026. 11. 28.(토)부터 문의가능<br>10:00~16:00 (점심 12:00~13:00)</span></td></tr>
-      <tr><td>관리비예치금 문의<br><span class="sub">관리사무소</span></td><td><a class="tel" href="tel:03133441588">031-3344-1588</a><br><span class="sub">Fax 031-3344-1599</span><br><span class="sub">2026. 11. 28.(토)부터 문의가능<br>10:00~17:00 (점심 12:00~13:00)</span></td></tr>
-      <tr><td>A/S 접수신청<br><span class="sub">A/S접수처</span></td><td><a class="tel" href="tel:07050293805">070-5029-3805</a><br><a class="tel" href="tel:07050293814">070-5029-3814</a><br><a class="tel" href="tel:07050293850">070-5029-3850</a><br><span class="sub">2026. 11. 28.(토)부터 문의가능<br>10:00~16:00 (점심 12:00~13:00)<br>※ 일요일·공휴일 휴무</span></td></tr>
-      <tr><td>유상옵션 관련<br><span class="sub">(유)애플이앤씨</span></td><td><a class="tel" href="tel:18008691">1800-8691</a><br><span class="sub">09:00~18:00 (점심 12:00~13:00)<br>※ 토.일요일·공휴일 휴무</span></td></tr>
+      <tr><th>구 분 · 문의처</th><th>전화번호 · 비 고</th></tr>
+      <tr><td>입주예정일<br>예약접수<br><span class="sub">관리사무소</span></td><td>☎ <a class="tel" href="tel:03133441588">031-3344-1588</a><br>Fax 031-3344-1599<br><span class="sub">2026. 11. 09.(월)부터 문의가능<br>09:00~17:00 (점심시간 12:00~13:00)<br>※ 모바일 예약만 가능</span></td></tr>
+      <tr><td>입주증 발급 및<br>입주절차 안내<br><span class="sub">입주지원센터</span></td><td>☎ <a class="tel" href="tel:07049117139">070-4911-7139</a><br><span class="sub">2026. 11. 28.(토)부터 문의가능<br>10:00~16:00 (점심시간 12:00~13:00)<br>※ 토.일요일, 공휴일 발급불가</span></td></tr>
+      <tr><td>열쇠불출 안내<br><span class="sub">입주지원센터</span></td><td>☎ <a class="tel" href="tel:07042766127">070-4276-6127</a><br><span class="sub">2026. 11. 28.(토)부터 문의가능<br>10:00~16:00 (점심시간 12:00~13:00)</span></td></tr>
+      <tr><td>관리비예치금 문의<br><span class="sub">관리사무소</span></td><td>☎ <a class="tel" href="tel:03133441588">031-3344-1588</a><br>Fax 031-3344-1599<br><span class="sub">2026. 11. 28.(토)부터 문의가능<br>10:00~17:00 (점심시간 12:00~13:00)</span></td></tr>
+      <tr><td>A/S 접수신청<br><span class="sub">A/S접수처</span></td><td>☎ <a class="tel" href="tel:07050293805">070-5029-3805</a><br>☎ <a class="tel" href="tel:07050293814">070-5029-3814</a><br>☎ <a class="tel" href="tel:07050293850">070-5029-3850</a><br><span class="sub">2026. 11. 28.(토)부터 문의가능<br>10:00~16:00 (점심시간 12:00~13:00)<br>※ 일요일·공휴일 휴무</span></td></tr>
+      <tr><td>유상옵션 관련<br><span class="sub">(유)애플이앤씨</span></td><td>☎ <a class="tel" href="tel:18008691">1800-8691</a><br><span class="sub">09:00~18:00 (점심시간 12:00~13:00)<br>※ 토.일요일·공휴일 휴무</span></td></tr>
     </table></div>
-    <h3>일반분양자</h3>
-    <p class="sub">2027. 03. 02.(화) ~ 2027. 04. 30.(금) [60일간]</p>
+    <h3>▶ 일반분양자 - 2027. 03. 02.(화) ~ 2027. 04. 30.(금) [60일간]</h3>
     <div class="tbl"><table>
-      <tr><th>구분 · 문의처</th><th>전화번호 · 비고</th></tr>
-      <tr><td>입주예정일 예약접수<br><span class="sub">관리사무소</span></td><td><a class="tel" href="tel:03133441588">031-3344-1588</a><br><span class="sub">Fax 031-3344-1599</span><br><span class="sub">2026. 11. 09.(월)부터 문의가능<br>09:00~17:00 (점심 12:00~13:00)<br>※ 모바일 예약만 가능</span></td></tr>
-      <tr><td>입주증 발급 및 입주절차 안내<br><span class="sub">입주지원센터</span></td><td><a class="tel" href="tel:07049117139">070-4911-7139</a><br><span class="sub">2027. 03. 02.(화)부터 문의가능<br>10:00~16:00 (점심 12:00~13:00)<br>※ 토.일요일, 공휴일 발급불가</span></td></tr>
-      <tr><td>열쇠불출 안내<br><span class="sub">입주지원센터</span></td><td><a class="tel" href="tel:07042766127">070-4276-6127</a><br><span class="sub">2027. 03. 02.(화)부터 문의가능<br>10:00~16:00 (점심 12:00~13:00)</span></td></tr>
-      <tr><td>관리비예치금 문의<br><span class="sub">관리사무소</span></td><td><a class="tel" href="tel:03133441588">031-3344-1588</a><br><span class="sub">Fax 031-3344-1599</span><br><span class="sub">2026. 11. 28.(토)부터 문의가능<br>10:00~17:00 (점심 12:00~13:00)</span></td></tr>
-      <tr><td>A/S 접수신청<br><span class="sub">A/S접수처</span></td><td><a class="tel" href="tel:07050293805">070-5029-3805</a><br><a class="tel" href="tel:07050293814">070-5029-3814</a><br><a class="tel" href="tel:07050293850">070-5029-3850</a><br><span class="sub">2027. 03. 02.(화)부터 문의가능<br>10:00~16:00 (점심 12:00~13:00)<br>※ 일요일·공휴일 휴무</span></td></tr>
-      <tr><td>유상옵션 관련<br><span class="sub">(유)애플이앤씨</span></td><td><a class="tel" href="tel:18008691">1800-8691</a><br><span class="sub">09:00~18:00 (점심 12:00~13:00)<br>※ 토.일요일·공휴일 휴무</span></td></tr>
+      <tr><th>구 분 · 문의처</th><th>전화번호 · 비 고</th></tr>
+      <tr><td>입주예정일<br>예약접수<br><span class="sub">관리사무소</span></td><td>☎ <a class="tel" href="tel:03133441588">031-3344-1588</a><br>Fax 031-3344-1599<br><span class="sub">2026. 11. 09.(월)부터 문의가능<br>09:00~17:00 (점심시간 12:00~13:00)<br>※ 모바일 예약만 가능</span></td></tr>
+      <tr><td>입주증 발급 및<br>입주절차 안내<br><span class="sub">입주지원센터</span></td><td>☎ <a class="tel" href="tel:07049117139">070-4911-7139</a><br><span class="sub">2027. 03. 02.(화)부터 문의가능<br>10:00~16:00 (점심시간 12:00~13:00)<br>※ 토.일요일, 공휴일 발급불가</span></td></tr>
+      <tr><td>열쇠불출 안내<br><span class="sub">입주지원센터</span></td><td>☎ <a class="tel" href="tel:07042766127">070-4276-6127</a><br><span class="sub">2027. 03. 02.(화)부터 문의가능<br>10:00~16:00 (점심시간 12:00~13:00)</span></td></tr>
+      <tr><td>관리비예치금 문의<br><span class="sub">관리사무소</span></td><td>☎ <a class="tel" href="tel:03133441588">031-3344-1588</a><br>Fax 031-3344-1599<br><span class="sub">2026. 11. 28.(토)부터 문의가능<br>10:00~17:00 (점심시간 12:00~13:00)</span></td></tr>
+      <tr><td>A/S 접수신청<br><span class="sub">A/S접수처</span></td><td>☎ <a class="tel" href="tel:07050293805">070-5029-3805</a><br>☎ <a class="tel" href="tel:07050293814">070-5029-3814</a><br>☎ <a class="tel" href="tel:07050293850">070-5029-3850</a><br><span class="sub">2027. 03. 02.(화)부터 문의가능<br>10:00~16:00 (점심시간 12:00~13:00)<br>※ 일요일·공휴일 휴무</span></td></tr>
+      <tr><td>유상옵션 관련<br><span class="sub">(유)애플이앤씨</span></td><td>☎ <a class="tel" href="tel:18008691">1800-8691</a><br><span class="sub">09:00~18:00 (점심시간 12:00~13:00)<br>※ 토.일요일·공휴일 휴무</span></td></tr>
     </table></div>
   </section>
 
+  <!-- p6 -->
   <section id="process">
     <h2>③ 입주절차</h2>
     <div class="note">
-      <p>☞ <b>대출세대</b>(중도금대출→상환 또는 잔금대출전환) : ①→②→③→④→⑤→⑥→⑦</p>
-      <p>☞ <b>비대출세대</b> : ①→②→④→⑤→⑥→⑦</p>
+      <p>☞ 대출세대(중도금대출→상환 또는 잔금대출전환) : ①→②→③→④→⑤→⑥→⑦</p>
+      <p>☞ 비대출세대 : ①→②→④→⑤→⑥→⑦</p>
     </div>
-    <ol class="steps">
-      <li><b class="no">1</b><b>입주예정일 신청</b>
-        <ul><li>이사 일자 예약 → 모바일예약</li></ul>
-        <p class="sub">모바일 입주예약 방법 <a href="#reserve">안내</a> 참조 → 관리사무소 문의</p></li>
-      <li><b class="no">2</b><b>분양대금 등 완납</b>
-        <ul><li>각종 잔금납부</li><li>중도금 이자후불금 → 금액 별도 문의</li><li>대출 보증수수료</li><li>유상옵션잔금 납부</li></ul>
-        <p class="sub">입주증 수령 전까지 납부 (각 지정계좌로 납부)</p></li>
-      <li><b class="no">3</b><b>중도금 대출 상환 또는 전환</b> <span class="sub">(해당 세대)</span>
-        <ul><li>중도금대출 원금 상환 또는 잔금대출로 전환</li><li>최초 입주개시일 발생되는 중도금대출이자 → 계약자 부담 (은행에 직접 납부)</li></ul>
-        <p class="sub">국민은행 해당 지점<br>[조합원] 101동, 103동 → 용인종합금융센터지점 / 104동, 107동 → 용인대로지점 / 106동 → 동백지점 / 102동, 105동, 108동 → 기흥구청지점<br>[일반분양자] 전 세대 → 용인종합금융센터지점</p></li>
-      <li><b class="no">4</b><b>입주증 발급</b>
-        <ul><li>분양대금 등 완납여부 확인</li><li>입주증 수령</li></ul>
-        <p class="sub">구비서류: 잔금납부영수증(조합: 분양금, 유상옵션 / 일반: 분양금, 발코니확장, 유상옵션), 중도금대출 이자후불금 및 보증수수료 납부영수증(해당세대만), 중도금대출 상환영수증(해당세대만), 계약자 신분증<br>
-        가족 방문 시: 가족관계증명서, 대리인신분증<br>
-        제3자 대리인 방문 시: 위임장(계약자 인감날인), 인감증명서(계약자본인발급), 대리인신분증</p></li>
-      <li><b class="no">5</b><b>관리비예치금 납부</b>
-        <ul><li>관리비예치금 납부 → 관리사무소 계좌에 입금</li><li>관리비예치금 납부영수증(납부확인용) → 관리사무소 발급</li></ul>
-        <p class="warn">관리비예치금 미납세대는 열쇠불출이 불가합니다.</p></li>
-      <li><b class="no">6</b><b>열쇠수령</b>
-        <ul><li>열쇠 수령 및 시설물 인수인계</li></ul>
-        <p class="sub">구비서류: 입주증, 관리비예치금 영수증(납부완료 시 교부), 계약자 신분증</p></li>
-      <li><b class="no">7</b><b>입주</b>
-        <ul><li>예약된 입주예정(이사일자)일에 입주</li></ul></li>
-    </ol>
+    <div class="steps">
+      <div class="step"><h4>① 입주예정일 신청</h4>
+        <div class="k">구 분</div><ul class="m"><li>▷ 이사 일자 예약<br>→ 모바일예약</li></ul>
+        <div class="k">비 고</div><p>모바일 입주예약 방법<br><a href="#reserve-mobile">(P8) 안내문 참조</a><br>→ 관리사무소 문의</p></div>
+      <div class="step"><h4>② 분양대금 등 완납</h4>
+        <div class="k">구 분</div><ul class="m"><li>▷ 각종 잔금납부</li><li>▷ 중도금 이자후불금<br>→ 금액 별도 문의</li><li>▷ 대출 보증수수료</li><li>▷ 유상옵션잔금 납부</li></ul>
+        <div class="k">비 고</div><p>입주증 수령 전까지 납부<br>(각 지정계좌로 납부)</p></div>
+      <div class="step"><h4>③ 중도금 대출 상환 또는 전환 (해당 세대)</h4>
+        <div class="k">구 분</div><ul class="m"><li>▷ 중도금대출 원금 상환 또는 잔금대출로 전환</li><li>▷ 최초 입주개시일 발생되는 중도금대출이자<br>→ 계약자 부담 (은행에 직접 납부)</li></ul>
+        <div class="k">비 고</div><ul class="m"><li>▷ 국민 은행 해당 지점</li>
+          <li>[조합원]</li>
+          <li>- 101동, 103동 → 용인종합금융센터지점</li>
+          <li>- 104동, 107동 → 용인대로지점</li>
+          <li>- 106동 → 동백지점</li>
+          <li>- 102동, 105동, 108동 → 기흥구청지점</li>
+          <li>[일반분양자]</li>
+          <li>- 전 세대 → 용인종합금융센터지점</li></ul></div>
+      <div class="step"><h4>④ 입주증 발급</h4>
+        <div class="k">구 분</div><ul class="m"><li>▷ 분양대금 등 완납여부 확인</li><li>▷ 입주증 수령</li></ul>
+        <div class="k">구 비 서 류</div><ul class="m">
+          <li>▷ 잔금납부영수증</li><li>- 조합 : 분양금, 유상옵션</li><li>- 일반 : 분양금, 발코니확장, 유상옵션</li>
+          <li>▷ 중도금대출 이자후불금 및 보증수수료 납부영수증(해당세대만)</li>
+          <li>▷ 중도금대출 상환영수증(해당세대만)</li>
+          <li>▷ 계약자 신분증</li></ul>
+        <div class="k">비 고</div><ul class="m">
+          <li>▷ 가족 방문 시</li><li>- 가족관계증명서</li><li>- 대리인신분증</li>
+          <li>▷ 제3자 대리인 방문 시</li><li>- 위임장(계약자 인감날인)</li><li>- 인감증명서(계약자본인발급)</li><li>- 대리인신분증</li></ul></div>
+      <div class="step"><h4>⑤ 관리비예치금 납부</h4>
+        <div class="k">구 분</div><ul class="m"><li>▷ 관리비예치금 납부<br>→ 관리사무소 계좌에 입금</li></ul>
+        <div class="k">구 비 서 류</div><ul class="m"><li>▷ 관리비예치금 납부영수증 (납부확인용) → 관리사무소 발급</li></ul>
+        <div class="k">비 고</div><p class="warn">관리비예치금 미납세대는 열쇠불출이 불가합니다.</p></div>
+      <div class="step"><h4>⑥ 열쇠수령</h4>
+        <div class="k">구 분</div><ul class="m"><li>▷ 열쇠 수령 및 시설물 인수인계</li></ul>
+        <div class="k">구 비 서 류</div><ul class="m"><li>▷ 입주증</li><li>▷ 관리비예치금 영수증 (납부완료 시 교부)</li><li>▷ 계약자 신분증</li></ul></div>
+      <div class="step"><h4>⑦ 입 주</h4>
+        <div class="k">구 분</div><ul class="m"><li>▷ 예약된 입주예정(이사일자)일에 입주</li></ul></div>
+    </div>
   </section>
 
-  <!-- 2. 입주절차 세부사항 -->
+  <div class="part">2. 입주절차 세부사항 안내</div>
+
+  <!-- p7 -->
   <section id="reserve">
-    <h2>입주예정일 예약</h2>
+    <h2>① 입주예정일 예약</h2>
     <p>입주시 이사중복에 따른 불편을 피하기 위해 엘리베이터 이용시간을 지정하여 사용할 예정입니다.</p>
-    <ol>
-      <li>입주지정기간 : [조기입주(1차)] 2026. 11. 28.(토) ~ 2027. 01. 26.(화) [60일간] / [공고입주(2차)] 2027. 03. 02.(화) ~ 2027. 04. 30.(금) [60일간]</li>
-      <li>입주일시 예약가능일 : 2026. 11. 09.(월) 10:00부터 (이사예약프로그램 신청, 방문예약불가)<br><span class="sub">※ 2026. 11. 09.(월) 오전10시부터 입주예약 사이트 접속 가능합니다.</span></li>
-      <li>예약문의 : 관리사무소 <a class="tel" href="tel:03133441588">031-3344-1588</a><br><span class="sub">(2026. 11. 09.(월)부터 전화문의가능_오전 09:00~오후 17:00 / 점심시간 12:00~13:00 제외)</span></li>
-      <li>엘리베이터 사용시간</li>
-    </ol>
+    <ul class="m">
+      <li>1. 입주지정기간 : [조기입주(1차)] 2026. 11. 28.(토) ~ 2027. 01. 26.(화) [60일간]<br>[공고입주(2차)] 2027. 03. 02.(화) ~ 2027. 04. 30.(금) [60일간]</li>
+      <li>2. 입주일시 예약가능일 : 2026. 11. 09.(월) 10:00부터 (이사예약프로그램 신청, 방문예약불가)<br><span class="sub">※ 2026. 11. 09.(월) 오전10시부터 입주예약 사이트 접속 가능합니다.</span></li>
+      <li>3. 예약문의 : 관리사무소 ☎ <a class="tel" href="tel:03133441588">031-3344-1588</a><br><span class="sub">(2026. 11. 09.(월)부터 전화문의가능_오전 09:00~오후 17:00 / 점심시간 12:00~13:00 제외)</span></li>
+      <li>4. 엘리베이터 사용시간</li>
+    </ul>
     <div class="tbl"><table>
-      <tr><th>입주지정시간</th><th>비고</th></tr>
+      <tr><th>입주지정시간</th><th>비 고</th></tr>
       <tr><td class="n">1회차 (09:00~12:00)</td><td rowspan="3">세대별 3시간 (E/V사용)</td></tr>
       <tr><td class="n">2회차 (12:00~15:00)</td></tr>
       <tr><td class="n">3회차 (15:00~18:00)</td></tr>
     </table></div>
-    <div class="note"><b>유의사항</b><ul>
-      <li>입주지정기간 전에는 입주가 불가하오니 유념하시기 바랍니다.</li>
-      <li>순조로운 입주 진행을 위해 희망 이사일을 각 회차별로 예약하신 후 이사하기 바랍니다.</li>
-      <li>입주 전 당사에서는 세대별 마무리 확인을 하오니 입주희망일 최소 10일 이전에 이사 일정 재확인을 하시기 바랍니다.</li>
-      <li>단지 내 혼잡과 엘리베이터 사용, 각종 시설물(가스, 수도, 엘리베이터, 기타 시설물)의 점검 및 안전상의 문제로 1일 엘리베이터 사용가능 세대수가 라인별로 제한되며, 입주지정기간 초기에는 많은 혼잡이 예상되오니 충분한 시간을 두고 입주 절차를 진행하여 주시기 바랍니다.</li>
-      <li>입주초기와 공휴일, 길일(손 없는 날)등 특정일은 상당한 혼잡이 예상되오니 가급적 평일에 입주하시면 편리하게 입주하실 수 있습니다.</li>
-      <li>타 세대에 불편이 초래되지 않도록 반드시 지정된 일자 및 시간에 이사를 완료하여 주시기 바랍니다.</li>
-      <li><b>단지배치상 사다리차 이용이 불가하여 엘리베이터를 이용하셔야 합니다.</b> 따라서, 사전에 엘리베이터 제약되는 사항이 있는지 이사업체에 필히 확인하신 후 진행하시기 바랍니다. 자세한 사항은 관리사무소와 협의하시기 바랍니다.</li>
-      <li>개인사정으로 입주지정(예약)일을 지키지 못할 시에는 관리사무소로 사전에 연락하시어 협의하여 주시기 바랍니다.</li>
-      <li>토/일요일, 공휴일 중에 입주를 희망하시는 세대는 필히 평일(은행영업일)에 중도금 대출상환처리 및 각종 잔금, 관리비예치금을 입금하시고 해당 영수증을 지참해 입주절차를 완료하시기 바랍니다. (관리사무소 및 입주지원센터에서는 현금 수납이 절대 불가함)</li>
-      <li>이삿짐은 입주증을 발급받으시고, 열쇠를 수령하신 후 반입이 가능합니다.</li>
-      <li>각종 대금 완납 전이라도 입주시간 지정예약 가능하나, 미리 예약하시더라도 각종 대금 완납 후 입주증을 발급받으셔야만 이사를 하실 수 있습니다.</li>
+    <div class="note"><div class="lbl">유의사항</div><ul class="m">
+      <li>▣ 입주지정기간 전에는 입주가 불가하오니 유념하시기 바랍니다.</li>
+      <li>▣ 순조로운 입주 진행을 위해 희망 이사일을 각 회차별로 예약하신 후 이사하기 바랍니다.</li>
+      <li>▣ 입주 전 당사에서는 세대별 마무리 확인을 하오니 입주희망일 최소 10일 이전에 이사 일정 재확인을 하시기 바랍니다.</li>
+      <li>▣ 단지 내 혼잡과 엘리베이터 사용, 각종 시설물 (가스, 수도, 엘리베이터, 기타 시설물)의 점검 및 안전상의 문제로 1일 엘리베이터 사용가능 세대수가 라인별로 제한되며, 입주지정기간 초기에는 많은 혼잡이 예상되오니 충분한 시간을 두고 입주 절차를 진행하여 주시기 바랍니다.</li>
+      <li>▣ 입주초기와 공휴일, 길일(손 없는 날)등 특정일은 상당한 혼잡이 예상되오니 가급적 평일에 입주하시면 편리하게 입주 하실 수 있습니다.</li>
+      <li>▣ 타 세대에 불편이 초래되지 않도록 반드시 지정된 일자 및 시간에 이사를 완료하여 주시기 바랍니다.</li>
+      <li>▣ 단지배치상 사다리차 이용이 불가하여 엘리베이터를 이용하셔야 합니다. 따라서, 사전에 엘리베이터 제약되는 사항이 있는지 이사업체에 필히 확인하신 후 진행하시기 바랍니다. 자세한 사항은 관리사무소와 협의하시기 바랍니다.</li>
+      <li>▣ 개인사정으로 입주지정(예약)일을 지키지 못할 시에는 관리사무소로 사전에 연락하시어 협의하여 주시기 바랍니다.</li>
+      <li>▣ 토/일요일, 공휴일 중에 입주를 희망하시는 세대는 필히 평일(은행영업일)에 중도금 대출상환처리 및 각종 잔금, 관리비 예치금을 입금하시고 해당 영수증을 지참해 입주절차를 완료하시기 바랍니다. (관리사무소 및 입주지원센터에서는 현금 수납이 절대 불가함)</li>
+      <li>▣ 이삿짐은 입주증을 발급받으시고, 열쇠를 수령하신 후 반입이 가능합니다.</li>
+      <li>▣ 각종 대금 완납 전이라도 입주시간 지정예약 가능하나, 미리 예약하시더라도 각종 대금 완납 후 입주증을 발급받으셔야만 이사를 하실 수 있습니다.</li>
     </ul></div>
 
-    <h3>모바일 입주예약 방법</h3>
-    <p><b>입주예약기간 : ’26년 11월 09일(월) 10시 ~ ’27년 04월 30일(금) 24시</b></p>
-    <a class="big" href="https://m2.dtspace.co.kr/st0010">입주예약 사이트 열기 (m2.dtspace.co.kr/st0010)</a>
-    <ul>
-      <li>별도의 APP. 설치 필요없이 <b>크롬 브라우저</b>에서 QR스캔하여 접속 합니다.</li>
-      <li>입주예약 기간에만 예약이 가능합니다.</li>
-      <li>화면 순서대로 로그인 (ID불필요 / 계약자 정보로만 로그인 가능)</li>
-      <li>입주 희망 날짜와 시간을 선택하시면 예약이 완료 됩니다.</li>
-      <li>예약이 완료되면 카카오 알림톡이 발송됩니다. (<b>예약 변경시 마지막 알림톡이 최종 예약내역임</b>)</li>
-      <li>예약 변경시에는 재로그인 하시면 예약변경이 가능하며, <b>예약 변경시 기존 예약은 자동 삭제됩니다.</b></li>
+    <!-- p8 -->
+    <h3 id="reserve-mobile">모바일 입주예약 방법 안내<br><span class="sub">(용인 역북 서희스타힐스 프라임시티)</span></h3>
+    <p><b>입주예약기간 ‘26년 11월 09일(월) 10시 ~ ‘27년 04월 30일(금) 24시</b></p>
+    <p>접속방법 ① chrome 에서 주소입력 <a href="https://m2.dtspace.co.kr/st0010">https://m2.dtspace.co.kr/st0010</a><br>접속방법 ② chrome 에서 QR 스캔</p>
+    <a class="big" href="https://m2.dtspace.co.kr/st0010">입주예약 사이트 열기</a>
+    <div class="lbl">예약 기능설명</div>
+    <ul class="m">
+      <li>▪ 별도의 APP. 설치 필요없이 크롬 브라우저에서 QR스캔하여 접속 합니다.</li>
+      <li>▪ 입주예약 기간에만 예약이 가능합니다.</li>
+      <li>▪ 화면 순서대로 로그인(ID불필요 / 계약자 정보로만 로그인 가능)</li>
+      <li>▪ 입주 희망 날짜와 시간을 선택하시면 예약이 완료 됩니다.</li>
+      <li>▪ 예약이 완료되면 카카오 알림톡이 발송됩니다. (<b>예약 변경시 마지막 알림톡이 최종 예약내역임</b>)</li>
+      <li>▪ 예약 변경시에는 재로그인 하시면 예약변경이 가능하며, <b>예약 변경시 기존 예약은 자동삭제됩니다.</b></li>
     </ul>
     <p class="warn">※ 선착순으로 배정되기 때문에 희망 일시에 입주가 곤란할 수 있으니 이 점 유의하여 주시기 바랍니다.</p>
-    <figure><img src="p8.jpg" alt="모바일 입주예약 화면 순서: 계약자정보 로그인, 개인정보활용동의, 이사날짜선택, 이사시간선택, 완료 클릭, 예약확인 알림톡, 예약변경/취소" loading="lazy" width="1075" height="1520">
-      <figcaption>원본 안내문 8쪽 (화면 순서 안내)</figcaption></figure>
+    <figure><img src="p8.jpg" alt="원본 안내문 8쪽: 모바일 입주예약 화면 순서(1.계약자정보 로그인, 2.개인정보활용동의, 3.이사날짜선택, 4.이사시간선택, 5.완료 클릭, 6.예약확인 알림톡, 7.예약변경/취소)" loading="lazy" width="1075" height="1520">
+      <figcaption>원본 안내문 8쪽</figcaption></figure>
   </section>
 
+  <!-- p9 -->
   <section id="pay">
-    <h2>각종 대금 납부안내</h2>
+    <h2>② 각종 대금 납부안내</h2>
     <h3>조합분양</h3>
     <div class="tbl"><table>
-      <tr><th>구분</th><th>입금계좌</th></tr>
-      <tr><td>분양금 잔금</td><td>농협 은행 <span class="acct">355-0078-6386-13</span><br><span class="sub">예금주 ㈜무궁화신탁</span></td></tr>
-      <tr><td>유상옵션 잔금 (해당세대만)</td><td>우리 은행 <span class="acct">1005-603-161169</span><br><span class="sub">예금주 (유)애플이엔씨</span></td></tr>
-      <tr><td>중도금 이자 후불금 (해당세대만)</td><td>농협 은행 <span class="acct">355-0078-6386-13</span><br><span class="sub">예금주 ㈜무궁화신탁</span></td></tr>
-      <tr><td>대출 보증수수료 (해당세대만)</td><td>농협 은행 <span class="acct">355-0078-6386-13</span><br><span class="sub">예금주 ㈜무궁화신탁</span></td></tr>
+      <tr><th>구분</th><th>은행명 · 계좌번호 · 예금주</th></tr>
+      <tr><td>분양금 잔금</td><td>농협 은행 <span class="acct">355-0078-6386-13</span><br><span class="sub">㈜무궁화신탁</span></td></tr>
+      <tr><td>유상옵션 잔금 (해당세대만)</td><td>우리 은행 <span class="acct">1005-603-161169</span><br><span class="sub">(유)애플이엔씨</span></td></tr>
+      <tr><td>중도금 이자 후불금 (해당세대만)</td><td>농협 은행 <span class="acct">355-0078-6386-13</span><br><span class="sub">㈜무궁화신탁</span></td></tr>
+      <tr><td>대출 보증수수료 (해당세대만)</td><td>농협 은행 <span class="acct">355-0078-6386-13</span><br><span class="sub">㈜무궁화신탁</span></td></tr>
     </table></div>
     <h3>일반분양</h3>
     <div class="tbl"><table>
-      <tr><th>구분</th><th>입금계좌</th></tr>
-      <tr><td>분양금 잔금</td><td>국민 은행 <span class="acct">649701-01-316056</span><br><span class="sub">예금주 ㈜무궁화신탁</span></td></tr>
-      <tr><td>발코니확장공사 잔금</td><td>국민 은행 <span class="acct">649701-01-316056</span><br><span class="sub">예금주 ㈜무궁화신탁</span></td></tr>
-      <tr><td>유상옵션 잔금 (해당세대만)</td><td>우리 은행 <span class="acct">1005-603-161169</span><br><span class="sub">예금주 (유)애플이엔씨</span></td></tr>
-      <tr><td>중도금 이자 후불금 (해당세대만)</td><td>국민 은행 <span class="acct">649701-01-316056</span><br><span class="sub">예금주 ㈜무궁화신탁</span></td></tr>
-      <tr><td>대출 보증수수료 (해당세대만)</td><td>국민 은행 <span class="acct">649701-01-316056</span><br><span class="sub">예금주 ㈜무궁화신탁</span></td></tr>
+      <tr><th>구분</th><th>은행명 · 계좌번호 · 예금주</th></tr>
+      <tr><td>분양금 잔금</td><td>국민 은행 <span class="acct">649701-01-316056</span><br><span class="sub">㈜무궁화신탁</span></td></tr>
+      <tr><td>발코니확장공사 잔금</td><td>국민 은행 <span class="acct">649701-01-316056</span><br><span class="sub">㈜무궁화신탁</span></td></tr>
+      <tr><td>유상옵션 잔금 (해당세대만)</td><td>우리 은행 <span class="acct">1005-603-161169</span><br><span class="sub">(유)애플이엔씨</span></td></tr>
+      <tr><td>중도금 이자 후불금 (해당세대만)</td><td>국민 은행 <span class="acct">649701-01-316056</span><br><span class="sub">㈜무궁화신탁</span></td></tr>
+      <tr><td>대출 보증수수료 (해당세대만)</td><td>국민 은행 <span class="acct">649701-01-316056</span><br><span class="sub">㈜무궁화신탁</span></td></tr>
     </table></div>
     <div class="tbl"><table>
       <tr><th>납부기한</th><td>[조기입주(1차)] 2026. 11. 28.(토) ~ 2027. 01. 26.(화)까지<br>[공고입주(2차)] 2027. 03. 02.(화) ~ 2027. 04. 30.(금)까지</td></tr>
       <tr><th>납부방법 및<br>유의사항</th><td>※ 입주지원센터에서는 현금 수납을 받지 않으니 반드시 위의 계좌번호로 입금하여 주시기 바랍니다.<br><b>(입금자란에 동ㆍ호수를 정확하게 기재하여 주시기 바랍니다.)</b><br>※ 입금예시 : 101동 202호 계약자 홍길동 ⇒ 101-202 또는 1010202홍길동</td></tr>
       <tr><th>연체안내</th><td>입주지정기간 종료일 [조기입주(1차)] 익일(2027. 01. 27.), [공고입주(2차)] 익일(2027. 05. 01.)부터 계약서에 약정된 연체요율로 계산된 연체료가 부과됩니다.<br>(단, 납부약정일이 지난 미납금액에 대해서는 입주지정기간 중에도 연체료가 부과됩니다.)</td></tr>
     </table></div>
-    <h3>연체료율 안내</h3>
+    <h3>▶ 연체료율 안내</h3>
     <div class="tbl"><table>
-      <tr><th>구분</th><th>기준</th><th>연체료율</th></tr>
+      <tr><th>구 분</th><th>기 준</th><th>연체료율</th></tr>
       <tr><td>조합원</td><td>미납금액 기준/연체일수로 산정</td><td class="n">15%</td></tr>
       <tr><td rowspan="4">일반분양자</td><td>1일이상 ~ 30일이하</td><td class="n">14.82%</td></tr>
       <tr><td>31일이상 ~ 90일이하</td><td class="n">17.82%</td></tr>
       <tr><td>91일이상 ~ 180일이하</td><td class="n">19.82%</td></tr>
       <tr><td>180일 초과</td><td class="n">21.82%</td></tr>
     </table></div>
-    <div class="note"><b>유의사항</b><ul>
-      <li>중도금 대출은 반드시 상환을 하시거나, 잔금대출(담보대출)로 대환하신 후 기존 대출은행에서 발행한 상환영수증 사본을 제출하셔야 합니다. 또한, 중도금대출은 반드시 해당은행의 대출계좌로 상환하여야하며, 상환 시 당사 지정계좌에 착오 입금할 경우 발생하는 문제(이자발생, 입주지연 등)에 대하여 당사가 책임지지 않사오니, 입금 시 유의하시기 바랍니다.</li>
-      <li>소유권이전등기 시점은 조합의 소유권 보존등기 완료 후 가능하므로 잔금납부일자 보다 지연될 수도 있습니다.</li>
-      <li>분양권 전매는 잔금완납 후에는 불가하므로, 의사가 있는 경우에는 잔금납부 전에 하시기 바랍니다. (잔금완납 이후는 어떠한 경우라도 관련 법령에 의거(미등기전매) 명의변경이 불가함을 알려드립니다.)</li>
-      <li>분양대금 중 잔금을 소액만 남기시고 납부하신 경우 그 시점부터 취득으로 간주되어 불이익(가산세 부과 등)을 당할 수 있으니 이 점 유의하시기 바랍니다.</li>
+    <div class="note"><div class="lbl">유의사항</div><ul class="m">
+      <li>▣ 중도금 대출은 반드시 상환을 하시거나, 잔금대출(담보대출)로 대환하신 후 기존 대출은행에서 발행한 상환영수증 사본을 제출하셔야 합니다. 또한, 중도금대출은 반드시 해당은행의 대출계좌로 상환하여야하며, 상환 시 당사 지정계좌에 착오 입금할 경우 발생하는 문제(이자발생, 입주지연 등)에 대하여 당사가 책임지지 않사오니, 입금 시 유의하시기 바랍니다.</li>
+      <li>▣ 소유권이전등기 시점은 조합의 소유권 보존등기 완료 후 가능하므로 잔금납부일자 보다 지연될 수도 있습니다.</li>
+      <li>▣ 분양권 전매는 잔금완납 후에는 불가하므로, 의사가 있는 경우에는 잔금납부 전에 하시기 바랍니다. (잔금완납 이후는 어떠한 경우라도 관련 법령에 의거(미등기전매) 명의변경이 불가함을 알려드립니다.)</li>
+      <li>▣ 분양대금 중 잔금을 소액만 남기시고 납부하신 경우 그 시점부터 취득으로 간주되어 불이익(가산세 부과 등)을 당할 수 있으니 이 점 유의하시기 바랍니다.</li>
     </ul></div>
   </section>
 
+  <!-- p10 -->
   <section id="loan">
-    <h2>중도금 대출 상환 방법 <span class="sub">(중도금 대출세대에 한함)</span></h2>
+    <h2>③ 중도금 대출 상환 방법(중도금 대출세대에 한함)</h2>
     <p>중도금 대출을 받으신 세대는 입주증 발급 전 대출금을 전액 상환하시거나, 담보대출로 대환하셔야 입주가 가능합니다.
     입주지정개시일(조합원, 일반분양자 상이함)부터 발생되는 이자는 계약자께서 직접 중도금 대출은행으로 납부하셔야 합니다.</p>
-    <h3>대출 은행안내</h3>
+    <h3>▶ 대출 은행안내</h3>
     <div class="tbl"><table>
-      <tr><th>구분</th><th>은행 및 해당 지점</th><th>연락처</th></tr>
-      <tr><td rowspan="4">조합분양<br>중도금대출</td><td>101동, 103동<br>(국민은행 용인종합금융센터지점)</td><td><a class="tel" href="tel:0313360236">031-336-0236</a><br><span class="sub">김지정 팀장</span></td></tr>
-      <tr><td>104동, 107동<br>(국민은행 용인대로지점)</td><td><a class="tel" href="tel:03180200979">031-8020-0979</a><br><span class="sub">차현희 팀장</span></td></tr>
-      <tr><td>106동<br>(국민은행 동백지점)</td><td><a class="tel" href="tel:0316440044">031-644-0044</a><br><span class="sub">정윤선 팀장</span></td></tr>
-      <tr><td>102동, 105동, 108동<br>(국민은행 기흥구청지점)</td><td><a class="tel" href="tel:0316443656">031-644-3656</a><br><span class="sub">송정미 팀장</span></td></tr>
-      <tr><td>일반분양<br>중도금대출</td><td>국민은행 용인종합금융센터지점</td><td><a class="tel" href="tel:0313360236">031-336-0236</a><br><span class="sub">김지정 팀장</span></td></tr>
+      <tr><th>구분</th><th>은행 및 해당 지점</th><th>연락처 · 비 고</th></tr>
+      <tr><td rowspan="4">조합분양<br>중도금대출</td><td>101동, 103동<br>(국민은행 용인종합금융센터지점)</td><td>☎ <a class="tel" href="tel:0313360236">031-336-0236</a><br><span class="sub">김지정 팀장</span></td></tr>
+      <tr><td>104동, 107동<br>(국민은행 용인대로지점)</td><td>☎ <a class="tel" href="tel:03180200979">031-8020-0979</a><br><span class="sub">차현희 팀장</span></td></tr>
+      <tr><td>106동<br>(국민은행 동백지점)</td><td>☎ <a class="tel" href="tel:0316440044">031-644-0044</a><br><span class="sub">정윤선 팀장</span></td></tr>
+      <tr><td>102동, 105동, 108동<br>(국민은행 기흥구청지점)</td><td>☎ <a class="tel" href="tel:0316443656">031-644-3656</a><br><span class="sub">송정미 팀장</span></td></tr>
+      <tr><td>일반분양<br>중도금대출</td><td>국민은행 용인종합금융센터지점</td><td>☎ <a class="tel" href="tel:0313360236">031-336-0236</a><br><span class="sub">김지정 팀장</span></td></tr>
     </table></div>
-    <p class="warn">* 동별 국민은행 해당지점이 다르니 유의하시기 바랍니다.</p>
-    <div class="note"><b>유의사항</b><ul>
-      <li>입주증 발급 시 중도금대출 상환 또는 대환세대는 “대출금 상환영수증”을 입주지원센터에 제출하여 주시기 바랍니다.</li>
-      <li>중도금 대출세대는 대출은행에 방문하시어 중도금 대출금액을 해당은행의 대출계좌로 상환 하셔야 하며, 분양대금 등의 납입계좌와 혼동하여 착오 입금되지 않도록 유의하시기 바랍니다. 차후 발생하는 문제(이자발생, 입주지연 등)에 대해서 당사에서는 책임지지 않사오니 유의하시기 바랍니다.</li>
-      <li>중도금 대출을 받으신 세대 중 부동산(아파트) 담보대출로 전환을 원하시는 세대는 입주증 발급전에 해당은행에 담보대출전환관련 서류를 접수하시고, 입주증 발급 신청전에 담보대출금이 실행되어, 대출금 전액이 상환되어야 합니다.</li>
-      <li>잔금(담보)대출은 당사와 무관하며, 금리 등 대출조건에 따라 입주자님께서 은행별 대출조건을 비교하신 후 직접 은행에 신청하셔야만 합니다.</li>
+    <p class="warn">*동별 국민은행 해당지점이 다르니 유의하시기 바랍니다.</p>
+    <div class="note"><div class="lbl">유의사항</div><ul class="m">
+      <li>▣ 입주증 발급 시 중도금대출 상환 또는 대환세대는 “대출금 상환영수증”을 입주지원센터에 제출하여 주시기 바랍니다.</li>
+      <li>▣ 중도금 대출세대는 대출은행에 방문하시어 중도금 대출금액을 해당은행의 대출계좌로 상환 하셔야 하며, 분양대금 등의 납입계좌와 혼동하여 착오 입금되지 않도록 유의하시기 바랍니다. 차후 발생하는 문제(이자발생, 입주지연 등)에 대해서 당사에서는 책임지지 않사오니 유의하시기 바랍니다.</li>
+      <li>▣ 중도금 대출을 받으신 세대 중 부동산(아파트) 담보대출로 전환을 원하시는 세대는 입주증 발급전에 해당은행에 담보대출전환관련 서류를 접수하시고, 입주증 발급 신청전에 담보대출금이 실행되어, 대출금 전액이 상환되어야 합니다.</li>
+      <li>▣ 잔금(담보)대출은 당사와 무관하며, 금리 등 대출조건에 따라 입주자님께서 은행별 대출조건을 비교하신 후 직접 은행에 신청하셔야만 합니다.</li>
     </ul></div>
   </section>
 
+  <!-- p11 -->
   <section id="card">
-    <h2>입주증 발급</h2>
-    <ol>
-      <li>발급기간 : 2026. 11. 28.(토)부터</li>
-      <li>발급장소 : 입주지원센터 <a class="tel" href="tel:07049117139">070-4911-7139</a><br><span class="sub">(평일 10:00~16:00, 점심시간 12:00~13:00, 토·일요일 및 공휴일 휴무)</span></li>
-      <li>발급요건 : 분양대금 잔금, 발코니 확장 잔금(해당세대만), 유상옵션 잔금(해당세대만), 중도금 이자후불금, 중도금대출 세대의 경우 전액 상환</li>
-      <li>구비서류</li>
-    </ol>
+    <h2>④ 입주증 발급</h2>
+    <ul class="m">
+      <li>1. 발급기간 : 2026. 11. 28.(토)부터</li>
+      <li>2. 발급장소 : 입주지원센터 ☎ <a class="tel" href="tel:07049117139">070-4911-7139</a><br><span class="sub">(평일 10:00~16:00, 점심시간 12:00~13:00, 토·일요일 및 공휴일 휴무)</span></li>
+      <li>3. 발급요건 : 분양대금 잔금, 발코니 확장 잔금(해당세대만), 유상옵션 잔금(해당세대만), 중도금 이자후불금, 중도금대출 세대의 경우 전액 상환</li>
+      <li>4. 구비서류</li>
+    </ul>
     <div class="tbl"><table>
-      <tr><th>공통</th><td><ul>
-        <li>분양대금 잔금납부영수증</li><li>발코니 확장 잔금납부영수증(해당세대에 한함)</li><li>유상옵션 잔금납부영수증(해당세대에 한함)</li>
-        <li>이자 후불금 납부영수증</li><li>중도금대출 상환(완제)영수증(대출세대에 한함) - 중도금 대출 금융기관에서 발급</li><li>계약자 신분증</li></ul></td></tr>
-      <tr><th>추가서류<br>(대리인 방문 시)</th><td><ul>
-        <li>가족일 경우 : 대리인신분증, 가족임을 증명할 수 있는 서류 (주민등록등본 또는 가족관계증명서 등)</li>
-        <li>제3자의 경우 : 위임장(계약자 인감날인), 인감증명서(계약자본인발급), 대리인신분증</li></ul>
-        <p class="sub">위임장 양식은 <a href="guide.pdf#page=21">원본 PDF 21쪽 [별지 1]</a>에 있습니다.</p></td></tr>
+      <tr><th>비 고</th><th>구 비 서 류</th></tr>
+      <tr><td>공 통</td><td><ul class="m">
+        <li>· 분양대금 잔금납부영수증</li><li>· 발코니 확장 잔금납부영수증(해당세대에 한함)</li><li>· 유상옵션 잔금납부영수증(해당세대에 한함)</li>
+        <li>· 이자 후불금 납부영수증</li><li>· 중도금대출 상환(완제)영수증(대출세대에 한함)<br>- 중도금 대출 금융기관에서 발급</li><li>· 계약자 신분증</li></ul></td></tr>
+      <tr><td>추가서류<br>대리인 방문 시</td><td><ul class="m">
+        <li>· 가족일 경우 : 대리인신분증, 가족임을 증명할 수 있는 서류 (주민등록등본 또는 가족관계증명서 등)</li>
+        <li>· 제3자의 경우 : 위임장(계약자 인감날인), 인감증명서(계약자본인발급), 대리인신분증</li></ul>
+        <p class="sub"><a href="guide.pdf#page=21">위임장 양식: 원본 PDF 21쪽 [별지 1]</a></p></td></tr>
     </table></div>
-    <p class="sub">※ 입주관련 모든 납부에 관하여 계약자 본인의 착오에 의한 과오납 및 오입금에 대한 환불처리는 환불신청 시점으로부터 1개월 정도 소요되며, 이로 인한 입주증 발급 및 열쇠 수령 지연에 의한 이사문제 발생에 대한 책임은 입주지원센터에 요구 할 수 없음을 알려드립니다. (초과입금 금액에 대한 이자는 지급되지 않음)</p>
-    <p class="sub">※ 환불신청 시 필요서류 : [계약자기준] 신분증사본 1부, 통장사본 1부, 인감증명서 1부, 초과납입한 입금증, 환불요청서(입주지원센터 비치) / [방문작성시] 계약자 인감도장 지참 / [대리인방문시] 위임장(입주지원센터 비치)</p>
-    <div class="note"><b>유의사항</b><ul>
-      <li>토,일요일 및 공휴일에 입주하실 세대는 평일(은행영업일)에 입주증을 교부받으시기 바랍니다.</li>
-      <li>입주증을 이사 당일 발급받으면 혼잡할 수 있으니, 되도록 수일 전에 여유있게 발급받으시기 바랍니다.</li>
-      <li>금융기관에서 1순위 근저당설정을 하기 전에 다른 선순위 저당권이 설정되면 담보대출이 불가능하여, 부득이 대출금을 상환하여야 하오니 유념하시기 바랍니다.</li>
-      <li>가압류 등 소유권이전에 제한이 있는 세대는 입주증 발급이 불가하며 입주 전 가압류 등 제한사항이 해소된 경우에만 발급 가능하며, 발급 시 가압류취소 결정문 또는 가압류취소신청 접수증명원을 제출하셔야 하오니 필히 지참하시기 바랍니다.</li>
+    <p class="sub">※ 입주관련 모든 납부에 관하여 계약자 본인의 착오에 의한 과오납 및 오입금에 대한 환불처리는 환불신청 시점으로부터 1개월 정도 소요되며, 이로 인한 입주증 발급 및 열쇠 수령 지연에 의한 이사문제 발생에 대한 책임은 입주지원센터에 요구 할 수 없음을 알려드립니다.(초과입금 금액에 대한 이자는 지급되지 않음)</p>
+    <p class="sub">※ 환불신청 시 필요서류 :<br>[계약자기준] 신분증사본 1부, 통장사본 1부, 인감증명서 1부, 초과납입한 입금증, 환불요청서(입주지원센터 비치)<br>[방문작성시] 계약자 인감도장 지참<br>[대리인방문시] 위임장(입주지원센터 비치)</p>
+    <div class="note"><div class="lbl">유의사항</div><ul class="m">
+      <li>▣ 토,일요일 및 공휴일에 입주하실 세대는 평일(은행영업일)에 입주증을 교부받으시기 바랍니다.</li>
+      <li>▣ 입주증을 이사 당일 발급받으면 혼잡할 수 있으니, 되도록 수일 전에 여유있게 발급받으시기 바랍니다.</li>
+      <li>▣ 금융기관에서 1순위 근저당설정을 하기 전에 다른 선순위 저당권이 설정되면 담보대출이 불가능하여, 부득이 대출금을 상환하여야 하오니 유념하시기 바랍니다.</li>
+      <li>▣ 가압류 등 소유권이전에 제한이 있는 세대는 입주증 발급이 불가하며 입주 전 가압류 등 제한사항이 해소된 경우에만 발급 가능하며, 발급 시 가압류취소 결정문 또는 가압류취소신청 접수증명원을 제출하셔야 하오니 필히 지참하시기 바랍니다.</li>
     </ul></div>
   </section>
 
+  <!-- p12 -->
   <section id="deposit">
-    <h2>관리비예치금 납부 및 관리계약 체결</h2>
-    <ol>
-      <li>대상 : 전 세대</li>
-      <li>납부시기 : 열쇠 수령전 까지</li>
-      <li>납부장소 : 아파트 관리사무소 지정계좌로 입금</li>
-      <li>문의 : <a class="tel" href="tel:03133441588">031-3344-1588</a></li>
-      <li>계좌번호</li>
-    </ol>
+    <h2>⑤ 관리비예치금 납부 및 관리계약 체결</h2>
+    <ul class="m">
+      <li>1. 대상 : 전 세대</li>
+      <li>2. 납부시기 : 열쇠 수령전 까지</li>
+      <li>3. 납부장소 : 아파트 관리사무소 지정계좌로 입금</li>
+      <li>4. 문의 : ☎ <a class="tel" href="tel:03133441588">031-3344-1588</a></li>
+      <li>5. 계좌번호</li>
+    </ul>
     <div class="tbl"><table>
-      <tr><th>입금계좌</th></tr>
-      <tr><td>농협 은행 <span class="acct">355-0098-1866-13</span><br><span class="sub">예금주 현대아미스(주) 역북 서희스타힐스 프라임시티아파트</span></td></tr>
+      <tr><th>은행명 · 예금주 · 계좌번호</th></tr>
+      <tr><td>농협 은행<br>현대아미스(주) 역북 서희스타힐스 프라임시티아파트<br><span class="acct">355-0098-1866-13</span></td></tr>
     </table></div>
-    <h3>평형별 관리비예치금액 <span class="sub">(단위 : 원)</span></h3>
+    <ul class="m"><li>6. 평형별 관리비예치금액 <span class="sub">(단위 : 원)</span></li></ul>
     <div class="tbl"><table>
-      <tr><th>타입</th><th>공급면적(㎡)</th><th>예치금</th></tr>
+      <tr><th>타 입</th><th>공급면적(㎡)</th><th>예치금</th></tr>
       <tr><td>59A</td><td class="n">82.1685㎡</td><td class="n">250,000</td></tr>
       <tr><td>59B</td><td class="n">82.6751㎡</td><td class="n">250,000</td></tr>
       <tr><td>74A</td><td class="n">101.1988㎡</td><td class="n">300,000</td></tr>
@@ -344,108 +369,111 @@
       <tr><td>84B</td><td class="n">114.9255㎡</td><td class="n">340,000</td></tr>
       <tr><td>84C</td><td class="n">114.4023㎡</td><td class="n">340,000</td></tr>
     </table></div>
-    <div class="note"><b>유의사항</b><ul>
-      <li>관리비예치금은 관리사무소 계좌로 납부하셔야 합니다. <b>☞ 분양대금 납부계좌와 관리비예치금 납부계좌가 다르므로 주의하시기 바랍니다.</b></li>
-      <li>관리사무소에서는 절대로 현금 수납을 하지 않으니 상기 계좌로 입금하시고, 무통장입금증 또는 계좌이체내역을 지참하시기 바랍니다.</li>
-      <li>입금시, 반드시 동호수 또는 계약자 성명으로 입금하시기 바랍니다.</li>
-      <li>관리비예치금을 미납하신 세대는 입주가 불가하오니 유의하시기 바랍니다.</li>
+    <div class="note"><div class="lbl">유의사항</div><ul class="m">
+      <li>▣ 관리비예치금은 관리사무소 계좌로 납부하셔야 합니다.<br><b>☞ 분양대금 납부계좌와 관리비예치금 납부계좌가 다르므로 주의하시기 바랍니다.</b></li>
+      <li>▣ 관리사무소에서는 절대로 현금 수납을 하지 않으니 상기 계좌로 입금하시고, 무통장입금증 또는 계좌이체내역을 지참하시기 바랍니다.</li>
+      <li>▣ 입금시, 반드시 동호수 또는 계약자 성명으로 입금하시기 바랍니다.</li>
+      <li>▣ 관리비예치금을 미납하신 세대는 입주가 불가하오니 유의하시기 바랍니다.</li>
     </ul></div>
-    <p class="sub">※ 관리비예치금이란? 공동주택관리법 시행령 제24조에 의거하여 신축아파트 최초 입주 시 아파트 관리에 소요되는 제반비용을 충당하기 위해 첫 달 관리비를 부과하기 전 징수하는 선납관리비입니다. 관리비예치금은 추후 전·출입시 관리사무소에서 미납 관리비 정산을 통해 환불하거나 신규 입주세대 간 승계처리가 되는 제도입니다.</p>
+    <p class="sub">※ 관리비예치금이란?<br>공동주택관리법 시행령 제24조에 의거하여 신축아파트 최초 입주 시 아파트 관리에 소요되는 제반비용을 충당하기 위해 첫 달 관리비를 부과하기 전 징수하는 선납관리비입니다.<br>관리비예치금은 추후 전·출입시 관리사무소에서 미납 관리비 정산을 통해 환불하거나 신규 입주세대 간 승계처리가 되는 제도입니다.</p>
   </section>
 
+  <!-- p13 -->
   <section id="key">
-    <h2>열쇠 수령 및 시설물 인수인계</h2>
+    <h2>⑥ 열쇠 수령 및 시설물 인수인계</h2>
     <h3>1. 열쇠 수령</h3>
-    <ol>
-      <li>대상 : 입주증 발급 완료세대</li>
-      <li>기간 : 2026. 11. 28.(토)부터<br><span class="sub">(매일 : 10:00 ~ 16:00, 점심시간 : 12:00 ~ 13:00, <b>15시 30분 이후 열쇠수령 불가</b>)</span></li>
-      <li>장소 : 입주지원센터 <a class="tel" href="tel:07042766127">070-4276-6127</a></li>
-      <li>구비서류 : 신분증, 입주증, 관리비예치금 영수증</li>
-    </ol>
+    <ul class="m">
+      <li>① 대상 : 입주증 발급 완료세대</li>
+      <li>② 기간 : 2026. 11. 28.(토)부터<br><span class="sub">(매일 : 10:00 ~ 16:00, 점심시간 : 12:00 ~ 13:00, <b>15시 30분 이후 열쇠수령 불가</b>)</span></li>
+      <li>③ 장소 : 입주지원센터 ☎ <a class="tel" href="tel:07042766127">070-4276-6127</a></li>
+      <li>④ 구비서류 : 신분증, 입주증, 관리비예치금 영수증</li>
+    </ul>
     <h3>2. 시설물 인수인계</h3>
-    <ol>
-      <li>열쇠 수령 시 직원과 함께 세대의 시설물을 점검하시고 각종 계량기를 상호 확인하시기 바라며, 이후 사용량에 대해선 입주자의 사용량에 따라 관리비가 부과됩니다.</li>
-      <li>세대 검침 확인 시 세대별로 설치된 각종 전자·전기제품의 설치 유무를 확인하시고, 열쇠수령 후에는 세대별 시설물의 도난, 파손 등의 사유 발생 시 입주자의 책임이므로 각별히 유념하시기 바랍니다.</li>
-      <li>입주 후 A/S 및 공사부분에 대한 불편사항은 A/S사무실로 접수하시기 바랍니다.</li>
-    </ol>
-    <div class="note"><b>유의사항</b><ul>
-      <li>열쇠는 관리비예치금을 납부하시고 입주증을 발급 받으신 분에 한하여 불출됩니다.</li>
-      <li>열쇠 교부는 해당 세대에 대한 당사의 제반 관리의무 및 권한을 계약자께 최종적으로 인계하는 중요한 단계입니다. 이에 따라 개별적 커튼공사, 인테리어공사 등으로 인한 시공업자의 열쇠교부 요청은 세대내 시설물의 사용, 도난, 손괴 등의 문제 발생으로 엄격히 제한하고 있으니 상기 시공은 입주자께서 정식으로 열쇠를 인수하신 이후 의뢰하시기 바랍니다.</li>
+    <ul class="m">
+      <li>① 열쇠 수령 시 직원과 함께 세대의 시설물을 점검하시고 각종 계량기를 상호 확인하시기 바라며, 이후 사용량에 대해선 입주자의 사용량에 따라 관리비가 부과됩니다.</li>
+      <li>② 세대 검침 확인 시 세대별로 설치된 각종 전자·전기제품의 설치 유무를 확인하시고, 열쇠수령 후에는 세대별 시설물의 도난, 파손 등의 사유 발생 시 입주자의 책임이므로 각별히 유념하시기 바랍니다.</li>
+      <li>③ 입주 후 A/S 및 공사부분에 대한 불편사항은 A/S사무실로 접수하시기 바랍니다.</li>
+    </ul>
+    <div class="note"><div class="lbl">유의사항</div><ul class="m">
+      <li>▣ 열쇠는 관리비예치금을 납부하시고 입주증을 발급 받으신 분에 한하여 불출됩니다.</li>
+      <li>▣ 열쇠 교부는 해당 세대에 대한 당사의 제반 관리의무 및 권한을 계약자께 최종적으로 인계하는 중요한 단계입니다. 이에 따라 개별적 커튼공사, 인테리어공사 등으로 인한 시공업자의 열쇠교부 요청은 세대내 시설물의 사용, 도난, 손괴 등의 문제 발생으로 엄격히 제한하고 있으니 상기 시공은 입주자께서 정식으로 열쇠를 인수하신 이후 의뢰하시기 바랍니다.</li>
     </ul></div>
     <h3>※ 임시 키 대여관련</h3>
-    <ol>
-      <li>잔금납부전 입주청소는 이사예약일 3일전부터 가능합니다. (세대 검침 및 확약서 작성 必 미작성시 일체불가) 또한 세대전기, 수도, 난방비 등 세대에서 개별적으로 사용하시는 관리비는 상기 절차 진행일부터 검침한 계량기 수치에 따라 부과 됩니다.</li>
-      <li>잔금납부전 인테리어 허용범위 안내드립니다. 이외 공사는 일체 불가합니다. <b>(입주청소, 줄눈, 탄성코트)</b> 무단시공 발견 즉시 원상복구하여야 하며, 잔금완납 시까지 세대 내 출입 불가합니다.</li>
-      <li>본인 방문시 신분증 / 세입자, 업체 등 제3자 방문시 위임장 및 계약자 신분증 사본 지참하셔야 합니다.</li>
-      <li>키대여 후 반납은 키 불출 당일 오후 3시30분 이전 필히 반납하셔야 합니다. (계약자 신분증, 대리인일 경우 방문자 신분증과 위임장)</li>
-    </ol>
+    <ul class="m">
+      <li>① 잔금납부전 입주청소는 이사예약일 3일전부터 가능합니다.(세대 검침 및 확약서 작성 必 미작성시 일체불가) 또한 세대전기, 수도, 난방비 등 세대에서 개별적으로 사용하시는 관리비는 상기 절차 진행일부터 검침한 계량기 수치에 따라 부과 됩니다.</li>
+      <li>② 잔금납부전 인테리어 허용범위 안내드립니다. 이외 공사는 일체 불가합니다.(입주청소, 줄눈, 탄성코트) 무단시공 발견 즉시 원상복구하여야 하며, 잔금완납 시까지 세대 내 출입 불가합니다.</li>
+      <li>③ 본인 방문시 신분증/ 세입자,업체 등 제3자 방문시 위임장 및 계약자 신분증 사본 지참하셔야 합니다.</li>
+      <li>④ 키대여 후 반납은 키 불출 당일 오후 3시30분 이전 필히 반납하셔야 합니다.<br>(계약자 신분증, 대리인일 경우 방문자 신분증과 위임장)</li>
+    </ul>
   </section>
 
+  <!-- p14-16 -->
   <section id="as">
-    <h2>A/S 접수</h2>
-    <p><span class="tag">조합원 및 조기입주자</span> 2026. 11. 28.(토) ~ / (일요일 및 공휴일 휴무)</p>
-    <p><span class="tag">일반분양자</span> 2027. 03. 02.(화) ~ / (일요일 및 공휴일 휴무)</p>
-    <h3>A/S 접수방법</h3>
-    <p>① 모바일 접수 (아래 안내 참조)</p>
-    <h3>A/S 전화 문의</h3>
-    <p><a class="tel" href="tel:07050293805">070-5029-3805</a> · <a class="tel" href="tel:07050293814">070-5029-3814</a> · <a class="tel" href="tel:07050293850">070-5029-3850</a><br>
+    <h2>⑦ A/S 접수</h2>
+    <p>▶ 조합원 및 조기입주자<br>2026. 11. 28.(토) ~ / (일요일 및 공휴일 휴무)</p>
+    <p>▶ 일반분양자<br>2027. 03. 02(화) ~ / (일요일 및 공휴일 휴무)</p>
+    <p>▶ A/S 접수방법<br>① 모바일 접수 (<a href="#as-mobile">P16참조</a>)</p>
+    <p>▶ A/S 전화 문의<br>☎ <a class="tel" href="tel:07050293805">070-5029-3805</a><br>☎ <a class="tel" href="tel:07050293814">070-5029-3814</a><br>☎ <a class="tel" href="tel:07050293850">070-5029-3850</a><br>
     <span class="sub">(10:00~16:00, 점심시간 12:00~13:00, 일요일 및 공휴일 휴무)</span></p>
 
-    <h3>모바일 하자 처리확인 및 접수 방법</h3>
-    <a class="big" href="https://m2.dtspace.co.kr/st0010">하자접수 사이트 열기 (m2.dtspace.co.kr/st0010)</a>
-    <ul>
-      <li>별도의 APP. 설치 필요없이 반드시 <b>크롬 브라우저에서 QR코드 스캔</b> (네이버, 다음 등의 앱은 사용불가)</li>
-      <li>평면도의 실명칭을 확인하고 실 → 부위 → 세부공종 → 유형을 순차적으로 선택 후 하자내용 필수 기입</li>
-      <li class="warn">하자 1건당 사진 2장 등록 필수</li>
-    </ul>
-    <p><b>하자처리 단계</b></p>
-    <ul>
-      <li>접수 → 현재 미처리 상태인 하자 건</li>
-      <li>작업완료 → 1차 작업완료 후 최종완료 확인 전 상태</li>
-      <li>재접수 → 1차 작업완료 후 확인결과 재작업 필요한 상태</li>
-      <li>최종완료 → 하자처리가 최종완료된 상태</li>
-    </ul>
-    <figure><img src="p16.jpg" alt="모바일 하자접수 화면 순서: 계약자정보 로그인, 점검등록 선택, 실·부위·세부공종·하자유형 선택, 하자내용 기재, 사진 2장 등록, 하자리스트 조회" loading="lazy" width="1075" height="1520">
-      <figcaption>원본 안내문 16쪽 (화면 순서 안내)</figcaption></figure>
-
-    <h3>A/S (하자)담보 책임기간</h3>
-    <p class="sub">“하자”란 공사상 잘못으로 인하여 균열·침하(沈下)·파손·들뜸·누수 등이 발생하여 건축물 또는 시설물의 안전상·기능상 또는 미관상의 지장을 초래할 정도의 결함을 의미하며, 내력구조부별 하자와 시설공사별 하자로 구분할 수 있습니다.</p>
+    <h3>▶ A/S (하자)담보 책임기간</h3>
+    <p class="sub">“하자”란 공사상 잘못으로 인하여 균열·침하(沈下)·파손·들뜸·누수 등이 발생하여 건축물 또는 시설물의 안전상·기능상 또는 미관상의 지장을 초래할 정도의 결함을 의미하며, 내력구조부별 하자 와 시설공사별 하자로 구분할 수 있습니다.</p>
     <div class="tbl"><table>
       <tr><th>기간</th><th>시설공사</th><th>세부공종</th></tr>
-      <tr><td rowspan="1" class="n"><b>2년</b></td><td>1. 마감공사</td><td>미장공사, 수장공사, 도장공사, 도배공사, 타일공사, 석공사(건물내부 공사), 옥내가구공사, 주방기구공사, 가전제품</td></tr>
-      <tr><td rowspan="14" class="n"><b>3년</b></td><td>2. 옥외급수·위생 관련 공사</td><td>공동구공사, 저수조(물탱크)공사, 옥외위생(정화조) 관련 공사, 옥외 급수 관련 공사</td></tr>
-      <tr><td>3. 난방·냉방·환기, 공기조화 설비공사</td><td>열원기기설비공사, 공기조화기기설비공사, 닥트설비공사, 배관설비공사, 보온공사, 자동제어설비공사, 온돌공사(세대매립배관 포함), 냉방설비공사</td></tr>
-      <tr><td>4. 급·배수 및 위생설비공사</td><td>급수설비공사, 온수공급설비공사, 배수·통기설비공사, 위생기구설비공사, 철 및 보온공사, 특수설비공사</td></tr>
-      <tr><td>5. 가스설비공사</td><td>가스설비공사, 가스저장시설공사</td></tr>
-      <tr><td>6. 목공사</td><td>구조체 또는 바탕재공사, 수장목공사</td></tr>
-      <tr><td>7. 창호공사</td><td>창문틀 및 문짝공사, 창호철물공사, 창호유리공사, 커튼월공사</td></tr>
-      <tr><td>8. 조경공사</td><td>식재공사, 조경시설물공사, 관수 및 배수공사, 조경포장공사, 조경부대시설공사, 잔디심기공사, 조경물공사</td></tr>
-      <tr><td>9. 전기 및 전력 설비공사</td><td>배관·배선공사, 피뢰침공사, 동력설비공사, 수·변전설비공사, 수·배전공사, 전기기기공사, 발전설비공사, 승강기설비공사, 인양기설비공사, 조명설비공사</td></tr>
-      <tr><td>10. 신재생 에너지 설비</td><td>태양열설비공사, 태양광설비공사, 지열설비공사, 풍력설비공사</td></tr>
-      <tr><td>11. 정보통신공사</td><td>통신·신호설비공사, TV공청설비공사, 감시제어설비공사, 가정자동화설비공사, 정보통신설비공사</td></tr>
-      <tr><td>12. 지능형 홈네트워크</td><td>홈네트워크망공사, 홈네트워크기기공사, 단지공용시스템공사</td></tr>
-      <tr><td>13. 소방시설공사</td><td>소화설비공사, 제연설비공사, 방재설비공사, 자동화재탐지설비공사</td></tr>
+      <tr><td class="n"><b>2년</b></td><td>1. 마감공사</td><td>가. 미장공사 | 나. 수장공사 | 다. 도장공사 | 라. 도배공사 | 마. 타일공사<br>바. 석공사(건물내부 공사) | 사. 옥내가구공사 | 아. 주방기구공사 | 자. 가전제품</td></tr>
+      <tr><td rowspan="14" class="n"><b>3년</b></td><td>2. 옥외급수· 위생 관련 공사</td><td>가. 공동구공사 | 나. 저수조(물탱크)공사 | 다. 옥외위생(정화조) 관련 공사<br>라. 옥외 급수 관련 공사</td></tr>
+      <tr><td>3. 난방·냉방·환기, 공기조화 설비공사</td><td>가. 열원기기설비공사 | 나. 공기조화기기설비공사 | 다. 닥트설비공사 | 라. 배관설비공사<br>마. 보온공사 | 바. 자동제어설비공사 | 사. 온돌공사(세대매립배관 포함) | 아. 냉방설비공사</td></tr>
+      <tr><td>4. 급·배수 및 위생설비공사</td><td>가. 급수설비공사 | 나. 온수공급설비공사 | 다. 배수·통기설비공사<br>라. 위생기구설비공사 | 마. 철 및 보온공사 | 바. 특수설비공사</td></tr>
+      <tr><td>5. 가스설비공사</td><td>가. 가스설비공사 | 나. 가스저장시설공사</td></tr>
+      <tr><td>6. 목공사</td><td>가. 구조체 또는 바탕재공사 | 나. 수장목공사</td></tr>
+      <tr><td>7. 창호공사</td><td>가. 창문틀 및 문짝공사 | 나. 창호철물공사 | 다. 창호유리공사 | 라. 커튼월공사</td></tr>
+      <tr><td>8. 조경공사</td><td>가. 식재공사 | 나. 조경시설물공사 | 다. 관수 및 배수공사 | 라. 조경포장공사<br>마. 조경부대시설공사 | 바. 잔디심기공사 | 사. 조경물공사</td></tr>
+      <tr><td>9. 전기 및 전력 설비공사</td><td>가. 배관·배선공사 | 나. 피뢰침공사 | 다. 동력설비공사 | 라. 수·변전설비공사<br>마. 수·배전공사 | 바. 전기기기공사 | 사. 발전설비공사 | 아. 승강기설비공사<br>자. 인양기설비공사 | 차. 조명설비공사</td></tr>
+      <tr><td>10. 신재생 에너지 설비</td><td>가. 태양열설비공사 | 나. 태양광설비공사 | 다. 지열설비공사 | 라. 풍력설비공사</td></tr>
+      <tr><td>11. 정보통신공사</td><td>가. 통신·신호설비공사 | 나. TV공청설비공사 | 다. 감시제어설비공사<br>라. 가정자동화설비공사 | 마. 정보통신설비공사</td></tr>
+      <tr><td>12. 지능형 홈네트워크</td><td>가. 홈네트워크망공사 | 나. 홈네트워크기기공사 | 다. 단지공용시스템공사</td></tr>
+      <tr><td>13. 소방시설공사</td><td>가. 소화설비공사 | 나. 제연설비공사 | 다. 방재설비공사 | 라. 자동화재탐지설비공사</td></tr>
       <tr><td>14. 단열공사</td><td>벽체, 천장 및 바닥의 단열공사</td></tr>
-      <tr><td>15. 잡공사</td><td>옥내설비공사(우편함, 무인택배시스템 등), 옥외설비공사(담장, 울타리, 안내시설물 등), 금속공사</td></tr>
-      <tr><td rowspan="6" class="n"><b>5년</b></td><td>16. 대지조성공사</td><td>토공사, 석축공사, 옹벽공사(토목옹벽), 배수공사, 포장공사</td></tr>
-      <tr><td>17. 철근콘크리트공사</td><td>일반철근콘크리트공사, 특수콘크리트공사, 프리캐스트콘크리트공사, 옹벽공사(건축옹벽), 콘크리트공사</td></tr>
-      <tr><td>18. 철골공사</td><td>일반철골공사, 철골부대공사, 경량철골공사</td></tr>
-      <tr><td>19. 조적공사</td><td>일반벽돌공사, 점토벽돌공사, 블록공사, 석공사(건물외부 공사)</td></tr>
-      <tr><td>20. 지붕공사</td><td>지붕공사, 홈통 및 우수관공사</td></tr>
-      <tr><td>21. 방수공사</td><td>방수공사</td></tr>
+      <tr><td>15. 잡공사</td><td>가. 옥내설비공사(우편함, 무인택배시스템 등)<br>나. 옥외설비공사(담장, 울타리, 안내시설물 등), 금속공사</td></tr>
+      <tr><td rowspan="6" class="n"><b>5년</b></td><td>16. 대지조성공사</td><td>가. 토공사 | 나. 석축공사 | 다. 옹벽공사(토목옹벽) | 라. 배수공사 | 마. 포장공사</td></tr>
+      <tr><td>17. 철근콘크리트공사</td><td>가. 일반철근콘크리트공사 | 나. 특수콘크리트공사 | 다. 프리캐스트콘크리트공사<br>라. 옹벽공사(건축옹벽) | 마. 콘크리트공사</td></tr>
+      <tr><td>18. 철골공사</td><td>가. 일반철골공사 | 나. 철골부대공사 | 다. 경량철골공사</td></tr>
+      <tr><td>19. 조적공사</td><td>가. 일반벽돌공사 | 나. 점토벽돌공사 | 다. 블록공사 | 라. 석공사(건물외부 공사)</td></tr>
+      <tr><td>20. 지붕공사</td><td>가. 지붕공사 | 나. 홈통 및 우수관공사</td></tr>
+      <tr><td>21. 방수공사</td><td>가. 방수공사</td></tr>
     </table></div>
+
+    <h3 id="as-mobile">모바일 하자 처리확인 및 접수 방법 안내<br><span class="sub">(용인 역북 서희스타힐스 프라임시티)</span></h3>
+    <p>접속방법 ① chrome 에서 주소입력 <a href="https://m2.dtspace.co.kr/st0010">https://m2.dtspace.co.kr/st0010</a><br>접속방법 ② chrome 에서 QR 스캔</p>
+    <a class="big" href="https://m2.dtspace.co.kr/st0010">하자접수 사이트 열기</a>
+    <div class="lbl">하자접수 기능설명</div>
+    <ul class="m">
+      <li>▪ 별도의 APP. 설치 필요없이 반드시 크롬 브라우저에서 QR코드 스캔(네이버, 다음 등의 앱은 사용불가)</li>
+      <li>▪ 평면도의 실명칭을 확인하고 실 →부위 →세부공종 →유형을 순차적으로 선택 후 하자내용 필수 기입</li>
+      <li class="warn">▪ 하자 1건당 사진 2장 등록 필수</li>
+    </ul>
+    <div class="lbl">하자처리 단계설명</div>
+    <ul class="m">
+      <li>▪ 접수 →현재 미처리 상태인 하자 건</li>
+      <li>▪ 작업완료 →1차 작업완료 후 최종완료 확인 전 상태</li>
+      <li>▪ 재접수 →1차 작업완료 후 확인결과 재작업 필요한 상태</li>
+      <li>▪ 최종완료 →하자처리가 최종완료된 상태</li>
+    </ul>
+    <figure><img src="p16.jpg" alt="원본 안내문 16쪽: 모바일 하자접수 화면 순서(①계약자정보로그인, ②점검등록선택, ③실선택, ④부위선택, ⑤세부공종선택, ⑥하자유형선택, ⑦하자내용필수기재, ⑧사진2장필수, ⑨하자리스트조회)" loading="lazy" width="1075" height="1520">
+      <figcaption>원본 안내문 16쪽</figcaption></figure>
   </section>
 
+  <!-- p17 -->
   <section id="caution">
-    <h2>입주관련 유의사항</h2>
-    <h3>관리비 부과기준</h3>
-    <p><span class="tag">조합원 및 조기입주자</span></p>
+    <h2>➇ 입주관련 유의사항</h2>
+    <h3>▶ 관리비 부과기준</h3>
+    <p>1. 조합원 및 조기입주자</p>
     <div class="tbl"><table>
       <tr><th>구분</th><th>기간</th><th>관리비 부과 기준</th></tr>
       <tr><td>입주지정기간</td><td class="n">2026. 11. 28.(토) ~ 2027. 01. 26.(화)</td><td>• 열쇠불출일 전까지: 사업주체 부담<br>• 열쇠불출일부터: 입주자 부담</td></tr>
       <tr><td>입주지정기간 종료 후</td><td class="n">2027. 01. 27.(수) 부터</td><td>• 잔금완납 및 입주여부와 관계없이 입주자 부담</td></tr>
     </table></div>
-    <p><span class="tag">일반분양자</span></p>
+    <p>2. 일반분양자</p>
     <div class="tbl"><table>
       <tr><th>구분</th><th>기간</th><th>관리비 부과 기준</th></tr>
       <tr><td>입주지정기간</td><td class="n">2027. 03. 02.(화) ~ 2027. 04. 30.(금)</td><td>• 열쇠불출일 전까지: 사업주체 부담<br>• 열쇠불출일부터: 입주자 부담</td></tr>
@@ -453,124 +481,128 @@
     </table></div>
     <p class="sub">(단, 세대전기, 수도, 난방비 등 세대에서 개별적으로 사용하시는 경우 검침한 계량기 수치에 따라 부과 됩니다.)</p>
 
-    <h3>공동주택의 관리 〔공동주택관리법 제35조(행위허가 기준 등)〕</h3>
+    <h3>▶ 공동주택의 관리〔공동주택관리법 제35조(행위허가 기준 등)〕</h3>
     <p>공동주택의 입주자/사용자 또는 관리주체가 다음 각 호의 어느 하나에 해당하는 행위를 하려는 경우에는 허가 또는 신고와 관련된 면적, 세대수 또는 입주자 등의 동의 비율에 관하여 대통령령으로 정하는 기준 및 절차 등에 따라 시장ㆍ군수ㆍ구청장의 허가를 받거나 신고를 하여야 한다.</p>
-    <ol>
-      <li>공동주택을 사업계획에 따른 용도외의 용도에 사용하는 행위</li>
-      <li>공동주택을 증축 · 개축 · 대수선하는 행위(「주택법」에 따른 리모델링은 제외한다.)</li>
-      <li>공동주택을 파손 또는 훼손하거나 해당 시설의 전부 또는 일부를 철거하는 행위 (국토교통부령으로 정하는 경미한 행위는 제외한다)</li>
-      <li>그 밖에 공동주택의 효율적 관리에 지장을 주는 행위로서 대통령령으로 정하는 행위</li>
-    </ol>
+    <ul class="m">
+      <li>① 공동주택을 사업계획에 따른 용도외의 용도에 사용하는 행위</li>
+      <li>② 공동주택을 증축 · 개축 · 대수선하는 행위(「주택법」에 따른 리모델링은 제외한다.)</li>
+      <li>③ 공동주택을 파손 또는 훼손하거나 해당 시설의 전부 또는 일부를 철거하는 행위 (국토교통부령으로 정하는 경미한 행위는 제외한다)</li>
+      <li>④ 그 밖에 공동주택의 효율적 관리에 지장을 주는 행위로서 대통령령으로 정하는 행위</li>
+    </ul>
     <p class="warn">※ 상기사항을 위반하는 자는 공동주택관리법 제102조 의거 500만원 이하의 과태료를 부과하도록 되어 있으니 이 점 유념하시기 바랍니다.</p>
 
-    <h3>단지 내 시설물 보호</h3>
-    <p>단지 내 시설물 및 조경 수목은 우리가 보호하고 가꾸어야 할 주민들의 소중한 재산입니다. 이삿짐 운반 시 특별히 주의하시고 파손 또는 훼손 시 변상 조치하오니 유념하시기 바랍니다.</p>
-    <h3>폐기물 처리 안내</h3>
+    <h3>▶ 단지 내 시설물 보호</h3>
+    <p>단지 내 시설물 및 조경 수목은 우리가 보호하고 가꾸어야 할 주민들의 소중한 재산입니다.<br>이삿짐 운반 시 특별히 주의하시고 파손 또는 훼손 시 변상 조치하오니 유념하시기 바랍니다.</p>
+    <h3>▶ 폐기물 처리 안내</h3>
     <p>종량제봉투를 사용하기 곤란한 폐가구 등은 관리사무소에 신고 후 별도의 비용을 부담해야하오니, 가급적 현재 거주지에서 처리하여 혼잡이 없도록 협조 바랍니다.</p>
-    <h3>일반매매 안내</h3>
+    <h3>▶ 일반매매 안내</h3>
     <p>세대 일반매매는 사용승인(준공)이후 원 조합원의 명의로 반드시 최초 취등록(등기)을 마친 이후에 가능하며, 이 때 조합원 자격요건에 관계없이 제3자에게 매매 가능합니다.</p>
   </section>
 
-  <!-- 3. 부록 -->
+  <div class="part">3. 부 록</div>
+
+  <!-- p18 -->
   <section id="tax">
-    <h2>취득세 납부 안내 <span class="sub">(일반분양자만 해당)</span></h2>
-    <ul>
-      <li>신고납부기한 : 취득일로부터 60일이내</li>
-      <li>취득일 기준<br>① 사용승인일(준공일) 이전 잔금 완납 시 : 사용승인일(준공일)<br>② 사용승인일(준공일) 이후 잔금 완납 시 : 잔금 완납일</li>
+    <h2>① 취득세 납부 안내(일반분양자만 해당)</h2>
+    <ul class="m">
+      <li>· 신고납부기한 : 취득일로부터 60일이내</li>
+      <li>· 취득일 기준<br>① 사용승인일(준공일) 이전 잔금 완납 시 : 사용승인일(준공일)<br>② 사용승인일(준공일) 이후 잔금 완납 시 : 잔금 완납일</li>
     </ul>
-    <div class="note"><b>유의사항</b><ul>
-      <li>납부기한이 경과하여 신고 및 납부할 경우, 가산세가 부과되오니 유의하시기 바랍니다.</li>
-      <li>개별 취득품목(별도계약 유상옵션품목)에 대해서도 취득세가 부과되오니 착오 없으시기 바랍니다.</li>
-      <li>분양대금 잔금을 선납하시거나 일부를 납부하실 경우, 납부금액에 따라 취득으로 간주될 수 있사오니 관련 기관에 문의하여 착오가 발생하지 않도록 유의하시기 바랍니다.</li>
-      <li>부동산거래계약(공급)신고필증은 조합사무실에서 일괄 보관하고 있습니다.</li>
+    <div class="note"><div class="lbl">유의사항</div><ul class="m">
+      <li>▣ 납부기한이 경과하여 신고 및 납부할 경우, 가산세가 부과되오니 유의하시기 바랍니다.</li>
+      <li>▣ 개별 취득품목(별도계약 유상옵션품목)에 대해서도 취득세가 부과되오니 착오 없으시기 바랍니다.</li>
+      <li>▣ 분양대금 잔금을 선납하시거나 일부를 납부하실 경우, 납부금액에 따라 취득으로 간주될 수 있사오니 관련 기관에 문의하여 착오가 발생하지 않도록 유의하시기 바랍니다.</li>
+      <li>▣ 부동산거래계약(공급)신고필증은 조합사무실에서 일괄 보관하고 있습니다.</li>
     </ul></div>
-    <p>※ 취득세 관련 문의처 : 처인구청 세무과 <a class="tel" href="tel:03161935183">031-6193-5183</a>, <a class="tel" href="tel:03161935235">5235</a></p>
+    <p>※ 취득세 관련 문의처 : 처인구청 세무과 ☎ <a class="tel" href="tel:03161935183">031-6193-5183</a>, <a class="tel" href="tel:03161935235">5235</a></p>
     <p class="sub">※ 세제 관련 안내사항은 입주자의 편의를 위하여 제작된 것으로서 관련법 개정 등으로 인한 일부 내용의 변경 및 인쇄상 오류가 있을 수 있사오니 자세한 사항은 관련 기관에 문의하시기 바랍니다.</p>
   </section>
 
+  <!-- p18-19 -->
   <section id="regist">
-    <h2>소유권이전등기 안내 <span class="sub">(일반분양자만 해당)</span></h2>
+    <h2>② 소유권이전등기 안내(일반분양자만 해당)</h2>
     <p>소유권이전등기는 아파트가 준공되면 사업주체인 역북지역주택조합 명의로 ‘소유권보존등기’후 계약자 명의로 소유권을 이전해 드리는 절차입니다. 단, 대출이 있으신 세대의 경우는 금융기관의 담보제공을 위해 근저당권설정등기를 소유권이전등기와 동시에 진행하셔야 합니다.</p>
-    <h3>소유권이전등기 절차(일반분양자)</h3>
-    <ol>
-      <li>각종대금 완납 <span class="sub">— 잔금, 대출상환</span></li>
-      <li>등기관련 서류 신청 및 수령 <span class="sub">— 역북지역주택조합</span></li>
-      <li>등기서류 접수 <span class="sub">— 등기소</span></li>
-      <li>등기완료 <span class="sub">— 등기권리증발급</span></li>
-    </ol>
-    <h3>등기의무 기간 <span class="sub">(경과 시 과태료 부과)</span></h3>
-    <ul>
+    <h3>※ 소유권이전등기 절차(일반분양자)</h3>
+    <div class="tbl"><table>
+      <tr><th>각종대금 완납</th><th>등기관련 서류<br>신청 및 수령</th><th>등기서류 접수</th><th>등기완료</th></tr>
+      <tr><td>잔금, 대출상환</td><td>역북지역주택조합</td><td>등기소</td><td>등기권리증발급</td></tr>
+    </table></div>
+    <h3>※ 등기의무 기간 (아래의 등기의무기간 경과 시 과태료 부과)</h3>
+    <ul class="m">
       <li>보존등기일 이전 잔금 완납세대 → 보존등기일로부터 60일 이내 등기</li>
       <li>보존등기일 이후 잔금 완납세대 → 잔금완납일로부터 60일 이내 등기</li>
     </ul>
-    <h3>소유권이전등기 관련서류 <span class="sub">(약 10일 소요)</span></h3>
+    <h3>※ 소유권이전등기 관련서류</h3>
     <div class="tbl"><table>
-      <tr><th>분양자 신청 구비서류</th><th>조합 발급서류</th></tr>
-      <tr><td>계약자 주민등록초본 1부<br>소유권이전등기서류교부신청서 1부</td>
-          <td>조합장인감이 날인된 등기용 위임장 1부<br>보존등기필증(=권리증)사본<br>부동산거래계약신고필증 사본<br>매도용 인감증명서 1부<br>세대별 정산내역서(=잔금완납확인서) 각1부<br>등기용등록증명서 1부</td></tr>
+      <tr><th>분양자 신청 구비서류</th><th>조합 발급서류<br>(약 10일 소요)</th></tr>
+      <tr><td>· 계약자 주민등록초본 1부<br>· 소유권이전등기서류교부신청서 1부</td>
+          <td>· 조합장인감이 날인된 등기용 위임장 1부<br>· 보존등기필증(=권리증)사본<br>· 부동산거래계약신고필증 사본<br>· 매도용 인감증명서 1부<br>· 세대별 정산내역서(=잔금완납확인서) 각1부<br>· 등기용등록증명서 1부</td></tr>
     </table></div>
-    <ul class="sub">
-      <li>상기 발급서류는 소유권보존등기 완료 후 발급이 가능하오니 착오 없으시기 바랍니다.</li>
-      <li>상기서류 외 소유권이전등기에 필요한 제반서류는 관할등기소에 문의 후 준비하시기 바랍니다.</li>
-      <li>신청서류 발급에는 일주일 이상의 기간이 소요될 수 있으므로 소유권이전등기 관련 서류는 개인별 소유권이전등기 만료일 기준 15일 이전에 신청하셔야 하며, 지연 신청 시에는 해태사유로 인한 과태료 부과 등의 불이익이 있을 수 있사오니 충분한 여유 기한 내에 등기를 완료하시기 바랍니다.</li>
+    <ul class="m sub">
+      <li>· 상기 발급서류는 소유권보존등기 완료 후 발급이 가능하오니 착오 없으시기 바랍니다.</li>
+      <li>· 상기서류 외 소유권이전등기에 필요한 제반서류는 관할등기소에 문의 후 준비하시기 바랍니다.</li>
+      <li>· 신청서류 발급에는 일주일 이상의 기간이 소요될 수 있으므로 소유권이전등기 관련 서류는 개인별 소유권이전등기 만료일 기준 15일 이전에 신청하셔야 하며, 지연 신청 시에는 해태사유로 인한 과태료 부과 등의 불이익이 있을 수 있사오니 충분한 여유 기한 내에 등기를 완료하시기 바랍니다.</li>
     </ul>
-    <h3>관련번호 안내</h3>
+    <h3>※ 관련번호 안내</h3>
     <div class="tbl"><table>
       <tr><th>구분</th><th>담당</th><th>연락처</th></tr>
-      <tr><td>조합서류 발급관련</td><td>역북지역주택조합</td><td><a class="tel" href="tel:0313351254">031-335-1254</a><br><a class="tel" href="tel:0313361254">031-336-1254</a></td></tr>
-      <tr><td>관할 등기소</td><td>수원지방법원 용인등기소</td><td><a class="tel" href="tel:15440770">1544-0770</a><br><a class="tel" href="tel:15440773">1544-0773</a></td></tr>
+      <tr><td>조합서류 발급관련</td><td>역북지역주택조합</td><td>☎ <a class="tel" href="tel:0313351254">031-335-1254</a> / ☎ <a class="tel" href="tel:0313361254">031-336-1254</a></td></tr>
+      <tr><td>관할 등기소</td><td>수원지방법원 용인등기소</td><td>☎ <a class="tel" href="tel:15440770">1544-0770</a> / ☎ <a class="tel" href="tel:15440773">1544-0773</a></td></tr>
     </table></div>
     <p class="sub">※ 소유권이전등기 시점은 조합의 소유권 보존등기 및 등기절차에 따라 입주지정일과 달리 다소 지연될 수도 있습니다.</p>
     <p class="sub">※ 세제 관련 안내사항은 입주자의 편의를 위하여 제작된 것으로서 관련법 개정 등으로 인한 일부 내용의 변경 및 인쇄상 오류가 있을 수 있사오니 자세한 사항은 관련 기관에 문의하시기 바랍니다.</p>
   </section>
 
+  <!-- p19 -->
   <section id="life">
-    <h2>생활편의시설 이용 안내</h2>
+    <h2>③ 생활편의시설 이용 안내</h2>
     <h3>1. 주민등록 전입신고</h3>
-    <ul>
-      <li>주민등록 전입신고 : 역북동 행정복지센터 (<a class="tel" href="tel:03161935933">031-6193-5933</a>)</li>
-      <li>인터넷 전입신고 <a href="https://www.gov.kr" target="_blank" rel="noopener">www.gov.kr</a> (검색창에서 “정부24”입력) → “전입신고” 클릭</li>
+    <ul class="m">
+      <li>• 주민등록 전입신고 : 역북동 행정복지센터 (☎ <a class="tel" href="tel:03161935933">031-6193-5933</a>)</li>
+      <li>• 인터넷 전입신고 <a href="https://www.gov.kr" target="_blank" rel="noopener">www.gov.kr</a> (검색창에서 “정부24”입력)→“전입신고” 클릭</li>
     </ul>
     <h3>2. 기타시설 전화번호</h3>
     <div class="tbl"><table>
-      <tr><th>구분</th><th>담당부서</th><th>전화번호</th></tr>
-      <tr><td>도시가스</td><td>삼천리 도시가스 고객센터</td><td><a class="tel" href="tel:15443002">1544-3002</a></td></tr>
+      <tr><th>구 분</th><th>담당부서</th><th>전화번호</th></tr>
+      <tr><td>도시가스</td><td>삼천리 도시가스 고객센터</td><td>☎ <a class="tel" href="tel:15443002">1544-3002</a></td></tr>
       <tr><td rowspan="3">전화/인터넷</td><td>KT</td><td>국번없이 <a class="tel" href="tel:100">100</a>번</td></tr>
-      <tr><td>LG U+</td><td>국번없이 <a class="tel" href="tel:101">101</a>번 (<a class="tel" href="tel:15440010">1544-0010</a>)</td></tr>
-      <tr><td>SK브로드밴드</td><td>국번없이 <a class="tel" href="tel:106">106</a>번 (<a class="tel" href="tel:0808282106">080-8282-106</a>)</td></tr>
-      <tr><td>등기관련 문의</td><td>수원지방법원 용인등기소</td><td><a class="tel" href="tel:15440770">1544-0770</a> / <a class="tel" href="tel:15440773">1544-0773</a></td></tr>
+      <tr><td>LG U+</td><td>국번없이 <a class="tel" href="tel:101">101</a>번 (☎ <a class="tel" href="tel:15440010">1544-0010</a>)</td></tr>
+      <tr><td>SK브로드밴드</td><td>국번없이 <a class="tel" href="tel:106">106</a>번 (☎ <a class="tel" href="tel:0808282106">080-8282-106</a>)</td></tr>
+      <tr><td>등기관련 문의</td><td>수원지방법원 용인등기소</td><td>☎ <a class="tel" href="tel:15440770">1544-0770</a> / ☎ <a class="tel" href="tel:15440773">1544-0773</a></td></tr>
     </table></div>
   </section>
 
+  <!-- p20 -->
   <section id="faq">
-    <h2>FAQ <span class="sub">자주 문의하시는 질문의 답변</span></h2>
+    <h2>④ FAQ(자주 문의하시는 질문의 답변)</h2>
     <dl class="faq">
       <dt>1. 잔금은 언제 납부해야 하나요?</dt>
-      <dd>입주지정 기간 내 잔금 일체를 납부하셔야 합니다. 각종 분양대금, 중도금대출 전액상환, 중도금 이자후불금, 대출 보증수수료, 유상 옵션품목 금액(해당세대)이 모두 완납되어야 입주가 가능하며, 입주지정기간 이후 부터는 미납금액에 대해 분양계약서에 약정된 연체요율로 계산된 연체료가 부과됩니다.<br><span class="sub">※ 조합원, 일반분양자 입주지정기간 상이함.</span></dd>
+      <dd>- 입주지정 기간 내 잔금 일체를 납부하셔야 합니다. 각종 분양대금, 중도금대출 전액상환, 중도금 이자후불금, 대출 보증수수료, 유상 옵션품목 금액(해당세대)이 모두 완납되어야 입주가 가능하며, 입주지정기간 이후 부터는 미납금액에 대해 분양계약서에 약정된 연체요율로 계산된 연체료가 부과됩니다.<br><span class="sub">※ 조합원, 일반분양자 입주지정기간 상이함.</span></dd>
       <dt>2. 입주예정일 예약은 무엇인가요?</dt>
-      <dd>이사기간 중 혼잡을 예방하기 위하여 엘리베이터 이용시간을 선착순으로 접수 받습니다. 입주예정일 예약은 입주자간의 약속이므로 반드시 지켜주시기 바랍니다.</dd>
+      <dd>- 이사기간 중 혼잡을 예방하기 위하여 엘리베이터 이용시간을 선착순으로 접수 받습니다. 입주예정일 예약은 입주자간의 약속이므로 반드시 지켜주시기 바랍니다.</dd>
       <dt>3. 입주증 발급 전에 세대 방문이 가능한가요?</dt>
-      <dd>원칙적으로 입주증 발급 후에 세대 방문이 가능하나 이사예약일 3일전 입주청소(줄눈, 탄성코트)를 위해 제한적으로 임시 키 발급은 가능합니다.</dd>
+      <dd>- 원칙적으로 입주증 발급 후에 세대 방문이 가능하나 이사예약일 3일전 입주청소(줄눈, 탄성코트)를 위해 제한적으로 임시 키 발급은 가능합니다.</dd>
       <dt>4. 관리비예치금은 무엇인가요?</dt>
-      <dd>관리비예치금은 본 건물의 공용부분에 대한 관리비 1회분을 추정 선납하는 것이며, 입주자께서 관리비를 납부하시기 전에 관리사무소에서 집행할 추정관리비를 예치하는 것입니다.</dd>
+      <dd>- 관리비예치금은 본 건물의 공용부분에 대한 관리비 1회분을 추정 선납하는 것이며, 입주자께서 관리비를 납부하시기 전에 관리사무소에서 집행할 추정관리비를 예치하는 것입니다.</dd>
       <dt>5. 관리비는 언제부터 부담하나요?</dt>
-      <dd>입주지정기간 내 입주하시는 세대는 열쇠 수령일부터 관리비가 부과됩니다. 단, 열쇠 수령 전 입주청소 등으로 전기, 수도, 난방을 사용한 경우에는 해당 사용일부터 발생한 사용료를 부담하셔야 합니다. 입주지정기간 내 입주하지 않은 세대는 입주지정기간 종료일 다음 날부터 실제 입주 여부와 관계없이 관리비를 부담하셔야 합니다.</dd>
+      <dd>- 입주지정기간 내 입주하시는 세대는 열쇠 수령일부터 관리비가 부과됩니다.<br>단, 열쇠 수령 전 입주청소 등으로 전기, 수도, 난방을 사용한 경우에는 해당 사용일부터 발생한 사용료를 부담하셔야 합니다. 입주지정기간 내 입주하지 않은 세대는 입주지정기간 종료일 다음 날부터 실제 입주 여부와 관계없이 관리비를 부담하셔야 합니다.</dd>
       <dt>6. 이사당일에 전세금을 받아서 이사 오는 경우는 어떻게 하나요?</dt>
-      <dd>이사희망일을 사전예약하시고, 이사진행 전 입주증을 받으시면 당일 입주가 가능합니다. 그러나 토요일, 일요일 및 공휴일은 은행 휴무일이므로 대출 상환 및 입금 확인이 불가하고, 입주지원센터에서는 현금 수납을 하지 않으니 입주 일정을 평일로 조정하시기 바랍니다.</dd>
+      <dd>- 이사희망일을 사전예약하시고, 이사진행 전 입주증을 받으시면 당일 입주가 가능합니다. 그러나 토요일, 일요일 및 공휴일은 은행 휴무일이므로 대출 상환 및 입금 확인이 불가하고, 입주지원센터에서는 현금 수납을 하지 않으니 입주 일정을 평일로 조정하시기 바랍니다.</dd>
       <dt>7. 대출·중도금대출을 받은 사람은 잔금만 내면 입주가 되는 건가요?</dt>
-      <dd>중도금 대출금을 상환이나 담보대출로 전환하시거나 둘 중 한 가지를 결정하셔야 합니다. 상환하실 경우에는 입주증 발급 전까지 상환 절차를 마치셔야 하며, 담보대출로 전환하실 경우는 입주증 발급 전에 부동산 담보대출로 전환하여 중도금대출금이 상환되어야 합니다.</dd>
+      <dd>- 중도금 대출금을 상환이나 담보대출로 전환하시거나 둘 중 한 가지를 결정하셔야 합니다. 상환하실 경우에는 입주증 발급 전까지 상환 절차를 마치셔야 하며, 담보대출로 전환하실 경우는 입주증 발급 전에 부동산 담보대출로 전환하여 중도금대출금이 상환되어야 합니다.</dd>
       <dt>8. 잔금대출을 신청하여 대출금으로 잔금 처리 하는 경우에는 신청만 하면 입주가 되나요?</dt>
-      <dd>잔금대출이 실행되어 잔금 계좌로 입금된 것이 확인된 경우에 한하여 입주증 발급이 가능합니다. 이 경우에도 부동산 담보대출 전환 절차를 입주증 발급 전에 마치셔야 합니다.</dd>
+      <dd>- 잔금대출이 실행되어 잔금 계좌로 입금된 것이 확인된 경우에 한하여 입주증 발급이 가능합니다. 이 경우에도 부동산 담보대출 전환 절차를 입주증 발급 전에 마치셔야 합니다.</dd>
       <dt>9. 입주증 수령을 대리인이 할 수 있나요?</dt>
-      <dd>원칙적으로 계약자 본인에게만 입주증 발급이 됩니다. 다만, 가족의 경우에는 가족관계를 입증하는 서류 그리고 오신 가족분의 신분증을 지참하고 오시면 됩니다. 가족이 아닌 경우 또는 가족임을 증명하기 어려운 경우에는 계약자의 인감이 날인된 위임장과 계약자의 인감증명서를 별도로 준비하셔야 합니다. <a href="guide.pdf#page=21">위임장 양식(원본 PDF 21쪽)</a></dd>
+      <dd>- 원칙적으로 계약자 본인에게만 입주증 발급이 됩니다. 다만, 가족의 경우에는 가족관계를 입증하는 서류 그리고 오신 가족분의 신분증을 지참하고 오시면 됩니다. 가족이 아닌 경우 또는 가족임을 증명하기 어려운 경우에는 계약자의 인감이 날인된 위임장과 계약자의 인감증명서를 별도로 준비하셔야 합니다.</dd>
     </dl>
+    <p class="sub"><a href="guide.pdf#page=21">[별지 1] 위임장 양식: 원본 PDF 21쪽</a></p>
   </section>
 
 </main>
 
 <footer class="wrap">
   본 안내문은 입주자의 편의를 위하여 제작된 것으로 관련법 개정 등으로 인한 일부 내용의 변경 및 인쇄상 오류가 있을 수 있습니다.<br>
-  원본 입주안내문(17판)을 웹으로 옮긴 페이지입니다. 내용이 다를 경우 <a href="guide.pdf">원본 PDF</a>가 우선합니다.
+  원본 입주안내문을 웹으로 옮긴 페이지입니다. 내용이 다를 경우 <a href="guide.pdf">원본 PDF</a>가 우선합니다.
 </footer>
 
 <script>
