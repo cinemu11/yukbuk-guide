@@ -31,6 +31,12 @@
   .menu a span { color:var(--sub); font-size:14px; }
   .menu a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
   .menu .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px; }
+  .menu a.hot { background:var(--accent); border-color:var(--accent); color:#fff; padding:18px 16px; box-shadow:0 4px 14px rgba(63,74,158,.28); }
+  @media (prefers-color-scheme: dark) { .menu a.hot { background:#3f4a9e; border-color:#9aa5f0; } }
+  .menu a.hot b { color:#fff; font-size:21px; }
+  .menu a.hot span { color:#fff; opacity:.9; }
+  .menu a.hot em { display:inline-block; font-style:normal; font-size:13px; font-weight:700; background:#ffd84d; color:#1b1e2b; border-radius:6px; padding:1px 8px; margin-bottom:6px; }
+  .menu a.hot i { display:block; font-style:normal; font-weight:700; margin-top:10px; padding:10px; border-radius:10px; background:#fff; color:#2c3470; text-align:center; }
   .menu .card > b { display:block; font-size:18px; color:var(--accent); }
   .menu .card > span { color:var(--sub); font-size:14px; }
   .menu .types { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
@@ -88,8 +94,8 @@
   </div>
 
   <nav class="menu" aria-label="안내 바로가기">
+    <a class="hot" href="hwakyak/?v=1125d"><em>제출 필요</em><b>확약서 제출 안내</b><span>확약서 다운로드 · 인감증명서(또는 본인서명사실확인서) · 메일 제출 · 조합사무실 위치</span><i>확약서 제출하러 가기 →</i></a>
     <a href="ipju/?v=1125d"><b>입주안내문</b><span>입주일정 · 입주절차 · 납부계좌 · 입주증 · 열쇠 · A/S · FAQ</span></a>
-    <a href="hwakyak/?v=1125d"><b>확약서 제출 안내</b><span>확약서 다운로드 · 인감증명서 발급 · 메일 제출 · 조합사무실 위치</span></a>
     <a href="https://m2.dtspace.co.kr/st0010"><b>입주예약(이사예약)</b><span>모바일 예약 사이트 · 크롬 브라우저 권장</span></a>
     <div class="card"><b>평면도 실측사이즈</b><span>네이버 블로그(외부 글) · 가구·가전 배치 참고용</span>
       <div class="types">
