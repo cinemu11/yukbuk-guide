@@ -52,6 +52,17 @@
   .maps { display:grid; grid-template-columns:repeat(4, 1fr); gap:6px; margin-top:8px; }
   .maps a, .maps button { text-align:center; padding:8px 2px; border:0; border-radius:8px; background:var(--soft); color:var(--accent); font:600 13.5px/1.4 var(--font); text-decoration:none; cursor:pointer; }
   footer { color:var(--sub); font-size:13px; text-align:center; padding-bottom:28px; }
+  .search { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; }
+  .search label { display:block; font-weight:700; margin-bottom:6px; }
+  .search input { width:100%; font:16px/1.4 var(--font); padding:11px 12px; border:2px solid var(--accent); border-radius:10px; background:var(--bg); color:var(--fg); }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+  .chips button { border:0; border-radius:999px; padding:4px 11px; background:var(--soft); color:var(--accent); font:600 13.5px/1.6 var(--font); cursor:pointer; }
+  #qinfo { margin:8px 0 0; }
+  #qinfo:empty { display:none; }
+  .res { display:block; padding:10px 0; border-top:1px solid var(--line); color:var(--fg); text-decoration:none; }
+  .res .where { display:block; font-size:12.5px; font-weight:700; color:var(--accent); }
+  .res .snip { font-size:15px; }
+  .res mark { background:#ffe98a; color:#1b1e2b; border-radius:3px; padding:0 1px; }
 </style>
 </head>
 <body>
@@ -65,9 +76,20 @@
 
 <main class="wrap">
 
+  <div class="search" role="search">
+    <label for="q">안내 내용 찾기</label>
+    <input id="q" type="search" placeholder="예: 계좌, 열쇠, 대리인, 인감증명서" autocomplete="off" enterkeyhint="search">
+    <div class="chips">
+      <button type="button">계좌</button><button type="button">열쇠</button><button type="button">입주증</button><button type="button">대리인</button>
+      <button type="button">관리비예치금</button><button type="button">인감증명서</button><button type="button">하자</button><button type="button">연체료</button>
+    </div>
+    <p id="qinfo" class="sub" aria-live="polite"></p>
+    <div id="qres"></div>
+  </div>
+
   <nav class="menu" aria-label="안내 바로가기">
-    <a href="ipju/?v=1125b"><b>입주안내문</b><span>입주일정 · 입주절차 · 납부계좌 · 입주증 · 열쇠 · A/S · FAQ</span></a>
-    <a href="hwakyak/?v=1125b"><b>확약서 제출 안내</b><span>확약서 다운로드 · 인감증명서 발급 · 메일 제출 · 조합사무실 위치</span></a>
+    <a href="ipju/?v=1125c"><b>입주안내문</b><span>입주일정 · 입주절차 · 납부계좌 · 입주증 · 열쇠 · A/S · FAQ</span></a>
+    <a href="hwakyak/?v=1125c"><b>확약서 제출 안내</b><span>확약서 다운로드 · 인감증명서 발급 · 메일 제출 · 조합사무실 위치</span></a>
     <a href="https://m2.dtspace.co.kr/st0010"><b>입주예약(이사예약)</b><span>모바일 예약 사이트 · 크롬 브라우저 권장</span></a>
     <div class="card"><b>평면도 실측사이즈</b><span>네이버 블로그(외부 글) · 가구·가전 배치 참고용</span>
       <div class="types">
@@ -80,7 +102,7 @@
 
   <h2>주요 공지</h2>
   <!-- 공지 추가: 아래 article 하나를 복사해 맨 위에 붙여넣고 내용만 바꾸면 됩니다. -->
-  <section class="notice">
+  <section class="notice" id="notice">
     <article>
       <span class="tag warn">중요</span><b>11. 28.(토)·11. 29.(일) 입주 세대</b>
       <p>은행이 영업을 하지 않으므로 잔금완납영수증을 <b>11. 27.(금)</b>에 발급받으시기 바랍니다.</p>
@@ -100,7 +122,7 @@
   </section>
 
   <h2>주요 연락처</h2>
-  <table>
+  <table id="contacts">
     <tr><td>조합사무실<br><span class="sub">문자 가능</span></td><td><a class="tel" href="tel:0313351254">031-335-1254</a><br><a class="sms" href="sms:0313351254">문자 보내기</a></td></tr>
     <tr class="addr"><td colspan="2"><span class="sub">경기도 용인시 처인구 성산로170번길 17-5 1층 역북지역주택조합</span>
       <div class="maps">
@@ -124,6 +146,110 @@
     try { navigator.clipboard.writeText(t).then(done, function () { window.prompt('길게 눌러 복사하세요', t); }); }
     catch (e) { window.prompt('길게 눌러 복사하세요', t); }
   });
+
+  // 안내 내용 찾기: 각 안내 페이지의 원문 문장을 그대로 찾아 보여준다(AI 아님).
+  (function () {
+    var V = '1125c';
+    var PAGES = [['ipju/', '입주안내문'], ['hwakyak/', '확약서 제출 안내']];
+    var SYN = { '계좌': ['계좌', '농협은행', '우리은행', '국민은행'], '계좌번호': ['계좌', '농협은행', '우리은행', '국민은행'], '키': ['열쇠', '키'], '열쇠': ['열쇠', '키'], 'as': ['a/s', '하자'], 'a/s': ['a/s', '하자'], '하자': ['하자', 'a/s'],
+                '이사': ['이사', '입주'], '대리': ['대리인', '위임'], '대리인': ['대리인', '위임'], '위임': ['위임', '대리인'],
+                '인감': ['인감', '본인서명'], '전화': ['☎', '전화', '연락처'], '연락처': ['☎', '전화', '연락처'] };
+    var SEL = 'p, li, tr, dt, dd, h2, h3, h4, article';
+    var q = document.getElementById('q'), info = document.getElementById('qinfo'), box = document.getElementById('qres');
+    var index = null, loading = null, timer;
+
+    function clean(s) { return s.replace(/\s+/g, ' ').trim(); }
+    function textOf(el) {   // 표 칸·줄바꿈 사이가 붙지 않도록 글 조각마다 띄어 쓴다
+      var parts = [], w = (el.ownerDocument || document).createTreeWalker(el, NodeFilter.SHOW_TEXT);
+      while (w.nextNode()) parts.push(w.currentNode.nodeValue);
+      return clean(parts.join(' ').replace(/ ([.,)\]])/g, '$1'));
+    }
+    function esc(s) { return s.replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+    function collect(root, page, name) {
+      var out = [];
+      [].slice.call(root.querySelectorAll(SEL)).forEach(function (el) {
+        if (el.closest('nav, header, footer, .search')) return;
+        var art = el.closest('article');
+        if (art && art !== el) return;                       // 공지는 제목+내용을 한 덩어리로
+        if (el.tagName !== 'ARTICLE' && el.querySelector(SEL)) return;   // 가장 안쪽 문장만
+        var t = textOf(el);
+        if (t.length < 2) return;
+        var anchor = el.closest('[id]'), sec = el.closest('section, .alert'), h = sec && sec.querySelector('h2');
+        // 소제목(조합분양/일반분양 등)은 그 바로 아래 표·목록에 속한 문장에만 붙인다
+        var box = el.closest('.tbl, ul, dl'), prev = box && box.previousElementSibling;
+        var h3 = prev && prev.tagName === 'H3' ? textOf(prev) : '';
+        out.push({ text: t, flat: t.replace(/\s/g, '').toLowerCase(),
+                   url: page + (page ? '?v=' + V : '') + (anchor ? '#' + anchor.id : ''),
+                   where: name + (h ? ' › ' + clean(h.textContent).replace(/^\d+/, '') : '')
+                          + (h3 ? ' › ' + h3 : '') });
+      });
+      return out;
+    }
+    function load() {
+      if (loading) return loading;
+      loading = Promise.all(PAGES.map(function (p) {
+        return fetch(p[0] + '?v=' + V).then(function (r) { return r.text(); }).then(function (html) {
+          var doc = new DOMParser().parseFromString(html, 'text/html');
+          return collect(doc.querySelector('main') || doc.body, p[0], p[1]);
+        });
+      })).then(function (lists) {
+        index = collect(document.querySelector('main'), '', '대문');
+        lists.forEach(function (l) { index = index.concat(l); });
+      }).catch(function () { loading = null; info.textContent = '안내 내용을 불러오지 못했습니다. 인터넷 연결을 확인해 주세요.'; });
+      return loading;
+    }
+    function snippet(text, alts) {
+      var low = text.toLowerCase(), at = -1;
+      alts.forEach(function (a) { a.forEach(function (w) { var i = low.indexOf(w); if (i >= 0 && (at < 0 || i < at)) at = i; }); });
+      var s = text, pre = '', post = '';
+      if (text.length > 140) {
+        var start = Math.max(0, (at < 0 ? 0 : at) - 40);
+        s = text.substr(start, 140); pre = start > 0 ? '… ' : ''; post = start + 140 < text.length ? ' …' : '';
+      }
+      // 모든 검색어를 한 번에 표시(긴 단어 우선) — 이미 넣은 <mark> 태그를 다시 건드리지 않도록
+      var ws = [].concat.apply([], alts).filter(Boolean).sort(function (a, b) { return b.length - a.length; });
+      var re = new RegExp(ws.map(function (w) { return w.replace(/[.*+?^${}()|[\]\\\/]/g, '\\$&'); }).join('|'), 'gi');
+      var html = '', last = 0, m;
+      while ((m = re.exec(s))) {
+        if (!m[0]) { re.lastIndex++; continue; }
+        html += esc(s.slice(last, m.index)) + '<mark>' + esc(m[0]) + '</mark>';
+        last = m.index + m[0].length;
+      }
+      return pre + html + esc(s.slice(last)) + post;
+    }
+    function run() {
+      var words = q.value.toLowerCase().split(/\s+/).filter(Boolean);
+      box.innerHTML = '';
+      if (!words.length) { info.textContent = ''; return; }
+      if (!index) { info.textContent = '찾는 중…'; load().then(run); return; }
+      var alts = words.map(function (w) { return (SYN[w] || [w]).map(function (s) { return s.replace(/\s/g, ''); }); });
+      var seen = {}, hits = index.filter(function (it) {
+        var key = it.url + '|' + it.text;
+        if (seen[key]) return false;
+        var ok = alts.every(function (a) { return a.some(function (w) { return it.flat.indexOf(w) >= 0; }); });
+        if (ok) seen[key] = 1;
+        return ok;
+      });
+      // 입력한 단어가 그대로 들어간 문장을 동의어로만 걸린 문장보다 앞에
+      var raw = words.map(function (w) { return w.replace(/\s/g, ''); });
+      var acct = raw.some(function (w) { return w.indexOf('계좌') === 0; });
+      hits = hits.map(function (it, i) {
+        var s = raw.filter(function (w) { return it.flat.indexOf(w) >= 0; }).length;
+        if (acct && it.flat.indexOf('은행') >= 0 && /(^|[^\d])[1-9]\d{2,5}-\d{2,4}-\d{2,6}/.test(it.text)) s += 2;   // 계좌를 찾으면 실제 계좌번호 행을 맨 앞에
+        return { it: it, i: i, s: s };
+      }).sort(function (a, b) { return b.s - a.s || a.i - b.i; }).map(function (x) { return x.it; });
+      if (!hits.length) { info.innerHTML = '찾는 내용이 없습니다. 조합사무실(<a class="tel" href="tel:0313351254">031-335-1254</a>)에 문의해 주세요.'; return; }
+      info.textContent = hits.length + '건' + (hits.length > 30 ? ' 중 30건 표시 · 단어를 더 넣어 좁혀 보세요' : '');
+      box.innerHTML = hits.slice(0, 30).map(function (it) {
+        return '<a class="res" href="' + esc(it.url || '#') + '"><span class="where">' + esc(it.where) + '</span><span class="snip">' + snippet(it.text, alts) + '</span></a>';
+      }).join('');
+    }
+    q.addEventListener('focus', load, { once: true });
+    q.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(run, 150); });
+    [].slice.call(document.querySelectorAll('.chips button')).forEach(function (b) {
+      b.addEventListener('click', function () { q.value = b.textContent; run(); });
+    });
+  })();
 </script>
 </body>
 </html>
