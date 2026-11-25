@@ -43,6 +43,9 @@
   .flow li + li::after { content:"▼"; position:absolute; top:-21px; left:50%; transform:translateX(-50%); color:var(--accent); font-size:13px; line-height:20px; }
   .flow b { font-size:16px; }
   .flow span { font-size:13.5px; color:var(--sub); }
+  .warn-fax { margin-top:12px; padding:10px 12px; border-radius:10px; border:2px solid #c0392b; color:var(--fg); font-size:15px; }
+  .warn-fax b { color:#c0392b; }
+  @media (prefers-color-scheme: dark) { .warn-fax { border-color:#ff8a80; } .warn-fax b { color:#ff8a80; } }
   .note { border:1px dashed var(--accent); border-radius:14px; padding:14px 16px; font-size:15px; }
 </style>
 </head>
@@ -101,6 +104,7 @@
     <div class="btns">
       <button class="btn" type="button" data-copy="031-337-1254">팩스번호 복사</button>
     </div>
+    <p class="warn-fax">※ 팩스로 제출하신 경우에는 <b>원본을 빠른등기로 보내시거나 조합사무실에 직접 전달</b>해 주셔야 합니다. <a href="#s-office">조합사무실 주소 보기</a></p>
   </section>
 
   <section id="s-office">
@@ -121,7 +125,8 @@
 
   <div class="note">
     ※ 이메일로 보낼 경우 <b>확약서·인감증명서(또는 본인서명사실확인서)·신분증 사본</b>을 스캔해 PDF로 저장 후 보내주세요.
-    서류 작성에 빠진 부분이 없다면 추가 우편접수나 원본은 보내지 않으셔도 됩니다.
+    서류 작성에 빠진 부분이 없다면 추가 우편접수나 원본은 보내지 않으셔도 됩니다.<br>
+    ※ 팩스로 보낼 경우에는 원본을 빠른등기로 보내시거나 조합사무실에 직접 전달해 주셔야 합니다.
   </div>
 </main>
 <script>
