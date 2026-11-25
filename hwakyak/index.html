@@ -33,6 +33,16 @@
   .opt { border-top:1px solid var(--line); padding-top:10px; margin-top:10px; }
   .opt ul { margin:6px 0 0; padding-left:18px; font-size:15px; }
   .opt li { margin:4px 0; }
+  .howto { margin-top:10px; border:1px solid var(--line); border-radius:12px; padding:10px 12px; }
+  .howto summary { cursor:pointer; font-weight:700; color:var(--accent); }
+  .flow { list-style:none; counter-reset:f; padding:0; margin:12px 0 6px; display:grid; gap:22px; }
+  .flow li { counter-increment:f; position:relative; display:grid; grid-template-columns:32px 1fr; column-gap:10px; align-items:center;
+             border:2px solid var(--accent); border-radius:12px; padding:10px 12px; background:var(--card); }
+  .flow li::before { content:counter(f); grid-row:span 2; display:grid; place-items:center; width:32px; height:32px; border-radius:50%;
+                     background:var(--accent); color:var(--card); font-weight:700; }
+  .flow li + li::after { content:"▼"; position:absolute; top:-21px; left:50%; transform:translateX(-50%); color:var(--accent); font-size:13px; line-height:20px; }
+  .flow b { font-size:16px; }
+  .flow span { font-size:13.5px; color:var(--sub); }
   .note { border:1px dashed var(--accent); border-radius:14px; padding:14px 16px; font-size:15px; }
 </style>
 </head>
@@ -59,6 +69,16 @@
       <div class="btns">
         <a class="btn" href="https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000025&amp;tp_seq=01" target="_blank" rel="noopener">정부24에서 발급</a>
       </div>
+      <details class="howto" id="fincert">
+        <summary>금융인증서가 없나요? 발급 방법 보기</summary>
+        <ol class="flow">
+          <li><b>은행 앱 로그인</b><span>평소 쓰는 은행 앱(인터넷뱅킹)</span></li>
+          <li><b>인증센터 → 금융인증서 발급</b><span>메뉴 이름은 은행마다 조금 다름 (예: 인증/보안)</span></li>
+          <li><b>본인 확인</b><span>이름·휴대폰 인증 등</span></li>
+          <li><b>비밀번호 6자리 설정</b><span>두 번 입력하면 발급 완료</span></li>
+        </ol>
+        <p class="sub">무료 · 유효기간 3년 · 정부24 로그인할 때 '금융인증서'를 고르고 6자리 비밀번호를 입력하면 됩니다.</p>
+      </details>
     </div>
     <div class="opt">
       <p><b>인감증명서가 없는 분</b> → <b>본인서명사실확인서</b></p>
@@ -108,6 +128,11 @@
       catch (e) { fallback(); }
     });
   });
+</script>
+<script>
+  // 검색 결과 등에서 #fincert 로 들어오면 발급 방법을 펼쳐서 보여준다
+  function openFincert() { if (location.hash === '#fincert') { var d = document.getElementById('fincert'); d.open = true; d.scrollIntoView(); } }
+  openFincert(); window.addEventListener('hashchange', openFincert);
 </script>
 </body>
 </html>
