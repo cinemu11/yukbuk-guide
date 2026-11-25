@@ -30,6 +30,9 @@
   .btn { flex:1 1 130px; text-align:center; padding:12px 10px; border-radius:10px; background:var(--btn); color:var(--accent);
          font:600 15px/1.4 var(--font); text-decoration:none; border:0; cursor:pointer; }
   .btn:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .opt { border-top:1px solid var(--line); padding-top:10px; margin-top:10px; }
+  .opt ul { margin:6px 0 0; padding-left:18px; font-size:15px; }
+  .opt li { margin:4px 0; }
   .note { border:1px dashed var(--accent); border-radius:14px; padding:14px 16px; font-size:15px; }
 </style>
 </head>
@@ -46,10 +49,22 @@
   </section>
 
   <section>
-    <h2><span>2</span>인감증명서 발급 및 신청</h2>
-    <p class="sub">공동인증서 또는 금융인증서 필요</p>
-    <div class="btns">
-      <a class="btn" href="https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000025&amp;tp_seq=01" target="_blank" rel="noopener">정부24에서 발급</a>
+    <h2><span>2</span>인감증명서 또는 본인서명사실확인서</h2>
+    <div class="opt">
+      <p><b>인감증명서가 있는 분</b> → <b>본인 인감증명서</b></p>
+      <ul>
+        <li><b>정부24 온라인 발급</b>: 공동인증서 또는 금융인증서와 휴대폰 본인인증이 필요합니다. 발급용도와 제출처(역북지역주택조합)를 입력하고, 발급된 증명서를 출력하거나 PDF로 저장합니다.</li>
+        <li><b>방문 발급</b>: 가까운 행정복지센터(주민센터)에 신분증을 가지고 방문합니다.</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000025&amp;tp_seq=01" target="_blank" rel="noopener">정부24에서 발급</a>
+      </div>
+    </div>
+    <div class="opt">
+      <p><b>인감증명서가 없는 분</b> → <b>본인서명사실확인서</b></p>
+      <ul>
+        <li><b>방문 발급만 가능</b>: 본인이 신분증을 가지고 가까운 행정복지센터(주민센터)에 직접 방문합니다. 대리 발급은 안 됩니다.</li>
+      </ul>
     </div>
   </section>
 
@@ -79,7 +94,7 @@
   </section>
 
   <div class="note">
-    ※ 이메일로 보낼 경우 <b>확약서·인감증명서·신분증 사본</b>을 스캔해 PDF로 저장 후 보내주세요.
+    ※ 이메일로 보낼 경우 <b>확약서·인감증명서(또는 본인서명사실확인서)·신분증 사본</b>을 스캔해 PDF로 저장 후 보내주세요.
     서류 작성에 빠진 부분이 없다면 추가 우편접수나 원본은 보내지 않으셔도 됩니다.
   </div>
 </main>
